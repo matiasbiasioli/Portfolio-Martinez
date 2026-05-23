@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "categoria": "Film",
+    "titulo": "Título de Película",
+    "director": "Nombre del Director",
+    "año": "2024",
+    "rol": "Art Director",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "imagen_hero": "https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=1200&q=80",
+    "escenas": [
+      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
+      "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&q=80",
+      "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
+      "https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?w=800&q=80",
+      "https://images.unsplash.com/photo-1500210600724-bf2c61ec56dc?w=800&q=80",
+      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80"
+    ],
+    "wip": []
+  },
+  {
+    "id": 2,
+    "categoria": "TV Series",
+    "titulo": "Título de Serie",
+    "director": "Nombre del Director",
+    "año": "2024",
+    "rol": "Production Designer",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "imagen_hero": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200&q=80",
+    "escenas": [
+      "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80",
+      "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80",
+      "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&q=80",
+      "https://images.unsplash.com/photo-1560109947-543149eceb16?w=800&q=80",
+      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80",
+      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80"
+    ],
+    "wip": []
+  },
+  {
+    "id": 3,
+    "categoria": "Film",
+    "titulo": "Título de Película",
+    "director": "Nombre del Director",
+    "año": "2023",
+    "rol": "Art Director",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "imagen_hero": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=1200&q=80",
+    "escenas": [
+      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
+      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
+      "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
+      "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&q=80"
+    ],
+    "wip": []
+  },
+  {
+    "id": 4,
+    "categoria": "Other",
+    "titulo": "Título de Proyecto",
+    "director": "Nombre del Director",
+    "año": "2023",
+    "rol": "Art Director",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "imagen_hero": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&q=80",
+    "escenas": [
+      "https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?w=800&q=80",
+      "https://images.unsplash.com/photo-1500210600724-bf2c61ec56dc?w=800&q=80",
+      "https://images.unsplash.com/photo-1560109947-543149eceb16?w=800&q=80"
+    ],
+    "wip": []
+  },
+  {
+    "id": 5,
+    "categoria": "TV Series",
+    "titulo": "Título de Serie",
+    "director": "Nombre del Director",
+    "año": "2023",
+    "rol": "Production Designer",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "imagen_hero": "https://images.unsplash.com/photo-1560109947-543149eceb16?w=1200&q=80",
+    "escenas": [
+      "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80",
+      "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&q=80",
+      "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80",
+      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
+    ],
+    "wip": []
+  },
+  {
+    "id": 6,
+    "categoria": "Film",
+    "titulo": "Título de Película",
+    "director": "Nombre del Director",
+    "año": "2022",
+    "rol": "Production Designer",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "imagen_hero": "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=1200&q=80",
+    "escenas": [
+      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
+      "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&q=80",
+      "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
+      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
+      "https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?w=800&q=80"
+    ],
+    "wip": []
+  },
+  {
+    "id": 7,
+    "categoria": "Other",
+    "titulo": "Título de Proyecto",
+    "director": "Nombre del Director",
+    "año": "2022",
+    "rol": "Art Director",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "imagen_hero": "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=1200&q=80",
+    "escenas": [
+      "https://images.unsplash.com/photo-1500210600724-bf2c61ec56dc?w=800&q=80",
+      "https://images.unsplash.com/photo-1560109947-543149eceb16?w=800&q=80",
+      "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&q=80"
+    ],
+    "wip": []
+  },
+  {
+    "id": 8,
+    "categoria": "Film",
+    "titulo": "Título de Película",
+    "director": "Nombre del Director",
+    "año": "2021",
+    "rol": "Art Director",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "imagen_hero": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=1200&q=80",
+    "escenas": [
+      "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80",
+      "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80",
+      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
+      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
+    ],
+    "wip": []
+  },
+  {
+    "id": 9,
+    "categoria": "TV Series",
+    "titulo": "Título de Serie",
+    "director": "Nombre del Director",
+    "año": "2021",
+    "rol": "Production Designer",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "imagen_hero": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1200&q=80",
+    "escenas": [
+      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
+      "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&q=80",
+      "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80"
+    ],
+    "wip": []
+  },
+  {
+    "id": 10,
+    "categoria": "Film",
+    "titulo": "Título de Película",
+    "director": "Nombre del Director",
+    "año": "2020",
+    "rol": "Art Director",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "imagen_hero": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1200&q=80",
+    "escenas": [
+      "https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?w=800&q=80",
+      "https://images.unsplash.com/photo-1500210600724-bf2c61ec56dc?w=800&q=80",
+      "https://images.unsplash.com/photo-1560109947-543149eceb16?w=800&q=80",
+      "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&q=80"
+    ],
+    "wip": []
+  },
+  {
+    "id": 11,
+    "categoria": "Other",
+    "titulo": "Título de Proyecto",
+    "director": "Nombre del Director",
+    "año": "2020",
+    "rol": "Production Designer",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "imagen_hero": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=1200&q=80",
+    "escenas": [
+      "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80",
+      "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80"
+    ],
+    "wip": []
+  },
+  {
+    "id": 12,
+    "categoria": "TV Series",
+    "titulo": "Título de Serie",
+    "director": "Nombre del Director",
+    "año": "2019",
+    "rol": "Art Director",
+    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "imagen_hero": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1200&q=80",
+    "escenas": [
+      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
+      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
+      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
+      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
+    ],
+    "wip": []
+  }
+]
