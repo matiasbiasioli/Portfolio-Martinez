@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Matías Martinez – Director de Arte. Películas, series y publicidad."
+    />
+    <title>Matías Martinez – Director de Arte</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- ========== NAVEGACIÓN ========== -->
+    <header class="nav" id="navbar">
+      <div class="nav__logo">
+        <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
+      </div>
+
+      <nav class="nav__links">
+        <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+        <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+        <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="nav__actions">
+        <!-- Redes sociales -->
+        <div class="nav__socials">
+          <a
+            href="https://www.instagram.com/USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.imdb.com/name/USUARIO/"
+            target="_blank"
+            rel="noopener"
+            aria-label="IMDB"
+          >
+            <i class="fab fa-imdb"></i>
+          </a>
+        </div>
+
+        <!-- Toggle idioma -->
+        <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+          <span class="lang-toggle__option active" data-lang="es">ES</span>
+          <span class="lang-toggle__divider">/</span>
+          <span class="lang-toggle__option" data-lang="en">EN</span>
+        </button>
+
+        <!-- Hamburger mobile -->
+        <button class="nav__hamburger" id="hamburger" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Menú mobile -->
+      <div class="nav__mobile" id="mobileMenu">
+        <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+        <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+        <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+
+        <!-- Redes en mobile -->
+        <div class="nav__mobile-socials">
+          <a
+            href="https://www.instagram.com/USUARIO"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/USUARIO"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@USUARIO"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.imdb.com/name/USUARIO/"
+            target="_blank"
+            aria-label="IMDB"
+            ><i class="fab fa-imdb"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== HERO – KEN BURNS ========== -->
+    <section class="hero" id="hero">
+      <!-- Slides -->
+      <div class="hero__slides">
+        <div class="hero__slide active" data-index="0">
+          <div
+            class="hero__slide-bg"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1920&q=80&quot;);
+            "
+          ></div>
+        </div>
+
+        <div class="hero__slide" data-index="1">
+          <div
+            class="hero__slide-bg"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1920&q=80&quot;);
+            "
+          ></div>
+        </div>
+
+        <div class="hero__slide" data-index="2">
+          <div
+            class="hero__slide-bg"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1920&q=80&quot;);
+            "
+          ></div>
+        </div>
+
+        <div class="hero__slide" data-index="3">
+          <div
+            class="hero__slide-bg"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=1920&q=80&quot;);
+            "
+          ></div>
+        </div>
+      </div>
+
+      <!-- Overlay degradado -->
+      <div class="hero__overlay"></div>
+
+      <!-- Texto sobre el hero -->
+      <div class="hero__content">
+        <p class="hero__label" data-i18n="hero.label">Director de Arte</p>
+        <h1 class="hero__name">Matías Martinez</h1>
+        <p class="hero__tagline" data-i18n="hero.tagline">
+          Cine · Series · Publicidad
+        </p>
+      </div>
+
+      <!-- Indicadores de slide -->
+      <div class="hero__dots">
+        <button
+          class="hero__dot active"
+          data-dot="0"
+          aria-label="Slide 1"
+        ></button>
+        <button class="hero__dot" data-dot="1" aria-label="Slide 2"></button>
+        <button class="hero__dot" data-dot="2" aria-label="Slide 3"></button>
+        <button class="hero__dot" data-dot="3" aria-label="Slide 4"></button>
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="hero__scroll-hint">
+        <span data-i18n="hero.scroll">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== PROYECTOS – AFICHES ========== -->
+    <!-- ========== PROYECTOS – AFICHES ========== -->
+<section class="projects" id="projects">
+
+  <div class="section-header">
+    <h2 class="section-title" data-i18n="projects.title">Proyectos</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects__grid">
+
+    <article class="project-card">
+      <a href="pelicula.html?id=1" class="project-card__link">
+        <div class="project-card__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=600&q=80"
+            alt="Película 1"
+            loading="lazy"
+            class="project-card__img"
+          />
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Título de Película</h3>
+          <p class="project-card__meta">Dirección de Arte</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="project-card">
+      <a href="pelicula.html?id=2" class="project-card__link">
+        <div class="project-card__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600&q=80"
+            alt="Película 2"
+            loading="lazy"
+            class="project-card__img"
+          />
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Título de Película</h3>
+          <p class="project-card__meta">Diseño de Producción</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="project-card">
+      <a href="pelicula.html?id=3" class="project-card__link">
+        <div class="project-card__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=600&q=80"
+            alt="Película 3"
+            loading="lazy"
+            class="project-card__img"
+          />
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Título de Película</h3>
+          <p class="project-card__meta">Dirección de Arte</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="project-card">
+      <a href="pelicula.html?id=4" class="project-card__link">
+        <div class="project-card__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80"
+            alt="Película 4"
+            loading="lazy"
+            class="project-card__img"
+          />
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Título de Película</h3>
+          <p class="project-card__meta">Diseño de Producción</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="project-card">
+      <a href="pelicula.html?id=5" class="project-card__link">
+        <div class="project-card__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1560109947-543149eceb16?w=600&q=80"
+            alt="Película 5"
+            loading="lazy"
+            class="project-card__img"
+          />
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Título de Película</h3>
+          <p class="project-card__meta">Dirección de Arte</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="project-card">
+      <a href="pelicula.html?id=6" class="project-card__link">
+        <div class="project-card__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=600&q=80"
+            alt="Película 6"
+            loading="lazy"
+            class="project-card__img"
+          />
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Título de Película</h3>
+          <p class="project-card__meta">Diseño de Producción</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="project-card">
+      <a href="pelicula.html?id=7" class="project-card__link">
+        <div class="project-card__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=600&q=80"
+            alt="Película 7"
+            loading="lazy"
+            class="project-card__img"
+          />
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Título de Película</h3>
+          <p class="project-card__meta">Dirección de Arte</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="project-card">
+      <a href="pelicula.html?id=8" class="project-card__link">
+        <div class="project-card__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=600&q=80"
+            alt="Película 8"
+            loading="lazy"
+            class="project-card__img"
+          />
+        </div>
+        <div class="project-card__info">
+          <h3 class="project-card__title">Título de Película</h3>
+          <p class="project-card__meta">Diseño de Producción</p>
+        </div>
+      </a>
+    </article>
+
+  </div>
+
+  <div class="projects__footer">
+    <a href="projects.html" class="btn-outline" data-i18n="projects.all">Ver todos los proyectos</a>
+  </div>
+
+</section>
+
+    <!-- ========== MOSAICO DE ESCENAS ========== -->
+    <!-- ========== GALERÍA DE PROYECTOS ========== -->
+<!-- ========== GALERÍA DE PROYECTOS ========== -->
+<section class="mosaic" id="gallery">
+
+  <div class="section-header">
+    <h2 class="section-title" data-i18n="mosaic.title">Fotografía de Escenas</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="mosaic__grid">
+
+    <!-- Columna 1 -->
+    <div class="mosaic__col">
+
+      <a href="pelicula.html?id=1" class="mosaic__item mosaic__item--tall">
+        <img src="https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80" alt="Escena película 1" loading="lazy" />
+        <div class="mosaic__caption">Título de Película</div>
+      </a>
+
+      <a href="pelicula.html?id=2" class="mosaic__item">
+        <img src="https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&q=80" alt="Escena película 2" loading="lazy" />
+        <div class="mosaic__caption">Título de Película</div>
+      </a>
+
+    </div>
+
+    <!-- Columna 2 -->
+    <div class="mosaic__col">
+
+      <a href="pelicula.html?id=3" class="mosaic__item">
+        <img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80" alt="Escena película 3" loading="lazy" />
+        <div class="mosaic__caption">Título de Película</div>
+      </a>
+
+      <a href="pelicula.html?id=4" class="mosaic__item">
+        <img src="https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?w=800&q=80" alt="Escena película 4" loading="lazy" />
+        <div class="mosaic__caption">Título de Película</div>
+      </a>
+
+      <a href="pelicula.html?id=5" class="mosaic__item mosaic__item--tall">
+        <img src="https://images.unsplash.com/photo-1500210600724-bf2c61ec56dc?w=800&q=80" alt="Escena película 5" loading="lazy" />
+        <div class="mosaic__caption">Título de Película</div>
+      </a>
+
+    </div>
+
+    <!-- Columna 3 -->
+    <div class="mosaic__col">
+
+      <a href="pelicula.html?id=6" class="mosaic__item mosaic__item--tall">
+        <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80" alt="Escena película 6" loading="lazy" />
+        <div class="mosaic__caption">Título de Película</div>
+      </a>
+
+      <a href="pelicula.html?id=7" class="mosaic__item">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80" alt="Escena película 7" loading="lazy" />
+        <div class="mosaic__caption">Título de Película</div>
+      </a>
+
+    </div>
+
+    <!-- Columna 4 -->
+    <div class="mosaic__col">
+
+      <a href="pelicula.html?id=8" class="mosaic__item">
+        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80" alt="Escena película 8" loading="lazy" />
+        <div class="mosaic__caption">Título de Película</div>
+      </a>
+
+      <a href="pelicula.html?id=9" class="mosaic__item mosaic__item--tall">
+        <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&q=80" alt="Escena película 9" loading="lazy" />
+        <div class="mosaic__caption">Título de Película</div>
+      </a>
+
+      <a href="pelicula.html?id=10" class="mosaic__item">
+        <img src="https://images.unsplash.com/photo-1560109947-543149eceb16?w=800&q=80" alt="Escena película 10" loading="lazy" />
+        <div class="mosaic__caption">Título de Película</div>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+
+  <div class="footer__main">
+
+    <!-- Nombre -->
+    <div class="footer__brand">
+      <a href="index.html" class="footer__name">Matías Martinez</a>
+      <p class="footer__role" data-i18n="hero.label">Director de Arte</p>
+    </div>
+
+    <!-- Nav links -->
+    <nav class="footer__nav">
+      <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+      <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+      <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <!-- Redes sociales -->
+    <div class="footer__socials">
+      <a href="https://www.instagram.com/USUARIO" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/USUARIO" target="_blank" rel="noopener" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.youtube.com/@USUARIO" target="_blank" rel="noopener" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.imdb.com/name/USUARIO/" target="_blank" rel="noopener" aria-label="IMDB">
+        <i class="fab fa-imdb"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Línea divisoria -->
+  <div class="footer__divider"></div>
+
+  <!-- Copyright -->
+  <div class="footer__bottom">
+    <p class="footer__copy">
+      © <span id="footerYear"></span> Matías Martinez · Todos los derechos reservados
+    </p>
+    <p class="footer__credit">
+      Design by <a href="https://www.saviadigital.com.ar" target="_blank" rel="noopener">Savia Digital</a>
+    </p>
+  </div>
+
+</footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
