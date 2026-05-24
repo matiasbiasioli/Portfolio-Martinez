@@ -46,65 +46,52 @@ const dots        = document.querySelectorAll('.hero__dot');
 
 let currentSlide  = 0;
 let slideInterval = null;
-const SLIDE_DURATION = 6000; // ms entre slides
+const SLIDE_DURATION = 6000;
 
-function goToSlide(index) {
-  // Quita estado activo del slide actual
-  slides[currentSlide].classList.remove('active');
-  dots[currentSlide].classList.remove('active');
+if (slides.length > 0) {
 
-  // Limpia clases de animación del slide anterior
-  slideBgs[currentSlide].classList.remove('zoom-in', 'zoom-out');
+  function goToSlide(index) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    slideBgs[currentSlide].classList.remove('zoom-in', 'zoom-out');
+    currentSlide = index;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+    const zoomClass = currentSlide % 2 === 0 ? 'zoom-in' : 'zoom-out';
+    void slideBgs[currentSlide].offsetWidth;
+    slideBgs[currentSlide].classList.add(zoomClass);
+  }
 
-  // Actualiza índice
-  currentSlide = index;
+  function nextSlide() {
+    const next = (currentSlide + 1) % slides.length;
+    goToSlide(next);
+  }
 
-  // Activa el nuevo slide
-  slides[currentSlide].classList.add('active');
-  dots[currentSlide].classList.add('active');
-
-  // Alterna zoom in / zoom out según el índice
-  // Pares → zoom in, impares → zoom out
-  const zoomClass = currentSlide % 2 === 0 ? 'zoom-in' : 'zoom-out';
-
-  // Fuerza reflow para reiniciar la animación CSS
-  void slideBgs[currentSlide].offsetWidth;
-  slideBgs[currentSlide].classList.add(zoomClass);
-}
-
-function nextSlide() {
-  const next = (currentSlide + 1) % slides.length;
-  goToSlide(next);
-}
-
-function startSlider() {
-  // Arranca el primer slide con zoom in
-  slideBgs[0].classList.add('zoom-in');
-  dots[0].classList.add('active');
-
-  slideInterval = setInterval(nextSlide, SLIDE_DURATION);
-}
-
-// Click en dots para navegar manualmente
-dots.forEach((dot, i) => {
-  dot.addEventListener('click', () => {
-    clearInterval(slideInterval);
-    goToSlide(i);
-    slideInterval = setInterval(nextSlide, SLIDE_DURATION);
-  });
-});
-
-// Pausa el slider cuando la pestaña no está visible (ahorra recursos)
-document.addEventListener('visibilitychange', () => {
-  if (document.hidden) {
-    clearInterval(slideInterval);
-  } else {
+  function startSlider() {
+    slideBgs[0].classList.add('zoom-in');
+    dots[0].classList.add('active');
     slideInterval = setInterval(nextSlide, SLIDE_DURATION);
   }
-});
 
-// Inicia
-startSlider();
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      clearInterval(slideInterval);
+      goToSlide(i);
+      slideInterval = setInterval(nextSlide, SLIDE_DURATION);
+    });
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      clearInterval(slideInterval);
+    } else {
+      slideInterval = setInterval(nextSlide, SLIDE_DURATION);
+    }
+  });
+
+  startSlider();
+
+} // fin slider
 
 
 /* ============================================================
@@ -181,6 +168,20 @@ const translations = {
     'projects.all':   'Ver todos los proyectos',
 
     'mosaic.title':  'Fotografía de Escenas',
+
+    'movie.director': 'Director',
+'movie.año':      'Año',
+'movie.rol':      'Rol',
+'movie.scenes':   'Fotografía de Escenas',
+'movie.wip':      'Work in Progress',
+'movie.back':     'Volver a proyectos',
+'movie.expand':   'Ver en pantalla completa',
+    // dentro de es:
+'filter.all':     'Todo',
+'filter.films':   'Películas',
+'filter.series':  'Series',
+'filter.other':   'Otros proyectos',
+
   },
   en: {
     'nav.name':      'Matías Martinez',
@@ -197,6 +198,20 @@ const translations = {
     'projects.all':   'View all projects',
 
     'mosaic.title':  'Scene Photography',
+
+    'movie.director': 'Director',
+    
+'movie.año':      'Year',
+'movie.rol':      'Role',
+'movie.scenes':   'Scene Photography',
+'movie.wip':      'Work in Progress',
+'movie.back':     'Back to projects',
+'movie.expand':   'Full screen',
+    // dentro de en:
+'filter.all':     'All',
+'filter.films':   'Films',
+'filter.series':  'TV Series',
+'filter.other':   'Other Projects',
   }
 };
 

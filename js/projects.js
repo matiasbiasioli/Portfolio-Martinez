@@ -52,41 +52,11 @@ filterBtns.forEach(btn => {
    2. TRADUCCIONES PARA ESTA PÁGINA
    ============================================================ */
 
-// Extiende las traducciones del main.js con las claves de esta página
-const projectsTranslations = {
-  es: {
-    'projects.label': 'Trabajos',
-    'projects.title': 'Proyectos',
-    'filter.all':     'All',
-    'filter.films':   'Films',
-    'filter.series':  'TV Series',
-    'filter.other':   'Other Projects',
-  },
-  en: {
-    'projects.label': 'Work',
-    'projects.title': 'Projects',
-    'filter.all':     'All',
-    'filter.films':   'Films',
-    'filter.series':  'TV Series',
-    'filter.other':   'Other Projects',
-  }
-};
-
-// Fusiona con las traducciones globales del main.js y las aplica
-function mergeAndApply() {
-  const lang = localStorage.getItem('mm_lang') || 'es';
-
-  // Agrega las claves de esta página al objeto global si existe
-  if (typeof translations !== 'undefined') {
-    Object.assign(translations.es, projectsTranslations.es);
-    Object.assign(translations.en, projectsTranslations.en);
-    applyLanguage(lang);
-  }
-}
-
-// Espera a que main.js esté listo
-window.addEventListener('load', mergeAndApply);
-
+// Aplica idioma guardado
+window.addEventListener('load', () => {
+  const savedLang = localStorage.getItem('mm_lang') || 'es';
+  applyLanguage(savedLang);
+});
 
 /* ============================================================
    4. SCROLL REVEAL PARA LAS CARDS
