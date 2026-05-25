@@ -115,6 +115,7 @@
   flex-direction: column;
   justify-content: center;
   padding-top: 1rem;
+  padding-left: 3rem;
 }
 
 .movie-info__categoria {
