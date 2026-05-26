@@ -7,7 +7,7 @@
     "año": "2024",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/pkkf4nSrVcI",
-    "imagen_hero": "/images/posters/wakolda-poster.jpg",
+    "imagen_hero": "./images/posters/wakolda-poster.jpg",
     "escenas": [
       "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
       "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&q=80",
