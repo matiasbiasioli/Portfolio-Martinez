@@ -22,7 +22,7 @@ async function loadMovie() {
 
   try {
     // Carga el JSON con todas las películas
-    const response = await fetch('/data/movies.json?v=' + Date.now());
+    const response = await fetch('data/movies.json');
     const movies = await response.json();
     console.log('películas cargadas:', movies);
 console.log('buscando id:', id);
