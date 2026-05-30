@@ -23,6 +23,7 @@
   /* Tipografía */
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Montserrat", sans-serif;
+  --font-title: 'Source Code Pro', monospace;
 
   /* Tamaños */
   --nav-height: 80px;
@@ -91,10 +92,10 @@ ul {
 }
 
 .section-title {
-  font-family: var(--font-display);
+  font-family: var(--font-title);
   font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 300;
-  letter-spacing: 0.08em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
   color: var(--color-white);
   white-space: nowrap;
 }

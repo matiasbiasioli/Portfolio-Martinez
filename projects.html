@@ -1,108 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Proyectos de Matías Martinez – Director de Arte." />
-  <title>Proyectos – Matías Martinez</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Proyectos de Matías Martinez – Director de Arte."
+    />
+    <title>Proyectos – Matías Martinez</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/projects.css" />
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+  </head>
 
-<body class="page-projects">
-
-  <!-- ========== NAVEGACIÓN ========== -->
-  <header class="nav scrolled" id="navbar">
-    <div class="nav__logo">
-      <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
-    </div>
-
-    <nav class="nav__links">
-      <a href="projects.html" class="active" data-i18n="nav.projects">Proyectos</a>
-      <a href="bio.html" data-i18n="nav.bio">Biografía</a>
-      <a href="contact.html" data-i18n="nav.contact">Contacto</a>
-    </nav>
-
-    <div class="nav__actions">
-
-      <!-- Redes sociales -->
-      <div class="nav__socials">
-        <a href="https://www.instagram.com/USUARIO" target="_blank" rel="noopener" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/USUARIO" target="_blank" rel="noopener" aria-label="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.youtube.com/@USUARIO" target="_blank" rel="noopener" aria-label="YouTube">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://www.imdb.com/name/USUARIO/" target="_blank" rel="noopener" aria-label="IMDB">
-          <i class="fab fa-imdb"></i>
-        </a>
+  <body class="page-projects">
+    <!-- ========== NAVEGACIÓN ========== -->
+    <header class="nav scrolled" id="navbar">
+      <div class="nav__logo">
+        <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
       </div>
 
-      <!-- Toggle idioma -->
-      <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
-        <span class="lang-toggle__option active" data-lang="es">ES</span>
-        <span class="lang-toggle__divider">/</span>
-        <span class="lang-toggle__option" data-lang="en">EN</span>
-      </button>
+      <nav class="nav__links">
+        <a href="projects.html" class="active" data-i18n="nav.projects"
+          >Proyectos</a
+        >
+        <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+        <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+      </nav>
 
-      <!-- Hamburger mobile -->
-      <button class="nav__hamburger" id="hamburger" aria-label="Menú">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="nav__actions">
+        <!-- Redes sociales -->
+        <div class="nav__socials">
+          <a
+            href="https://www.instagram.com/USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.imdb.com/name/USUARIO/"
+            target="_blank"
+            rel="noopener"
+            aria-label="IMDB"
+          >
+            <i class="fab fa-imdb"></i>
+          </a>
+        </div>
 
-    </div>
+        <!-- Toggle idioma -->
+        <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+          <span class="lang-toggle__option active" data-lang="es">ES</span>
+          <span class="lang-toggle__divider">/</span>
+          <span class="lang-toggle__option" data-lang="en">EN</span>
+        </button>
 
-    <!-- Menú mobile -->
-    <div class="nav__mobile" id="mobileMenu">
-      <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
-      <a href="bio.html" data-i18n="nav.bio">Biografía</a>
-      <a href="contact.html" data-i18n="nav.contact">Contacto</a>
-      <div class="nav__mobile-socials">
-        <a href="https://www.instagram.com/USUARIO" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/USUARIO" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.youtube.com/@USUARIO" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.imdb.com/name/USUARIO/" target="_blank" aria-label="IMDB"><i class="fab fa-imdb"></i></a>
+        <!-- Hamburger mobile -->
+        <button class="nav__hamburger" id="hamburger" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+
+      <!-- Menú mobile -->
+      <div class="nav__mobile" id="mobileMenu">
+        <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
+        <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+        <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+        <div class="nav__mobile-socials">
+          <a
+            href="https://www.instagram.com/USUARIO"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/USUARIO"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@USUARIO"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.imdb.com/name/USUARIO/"
+            target="_blank"
+            aria-label="IMDB"
+            ><i class="fab fa-imdb"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-hero">
+      <p class="page-hero__label" data-i18n="projects.label">Trabajos</p>
+      <h1 class="page-hero__title" data-i18n="projects.title">Proyectos</h1>
+      <div class="page-hero__line"></div>
+    </section>
+
+    <!-- ========== FILTROS ========== -->
+    <div class="filters">
+      <button
+        class="filters__btn active"
+        data-filter="all"
+        data-i18n="filter.all"
+      >
+        All
+      </button>
+      <button class="filters__btn" data-filter="film" data-i18n="filter.films">
+        Films
+      </button>
+      <button
+        class="filters__btn"
+        data-filter="tv-series"
+        data-i18n="filter.series"
+      >
+        TV Series
+      </button>
+      <button class="filters__btn" data-filter="other" data-i18n="filter.other">
+        Other Projects
+      </button>
     </div>
-  </header>
 
-
-  <!-- ========== PAGE HEADER ========== -->
-  <section class="page-hero">
-    <p class="page-hero__label" data-i18n="projects.label">Trabajos</p>
-    <h1 class="page-hero__title" data-i18n="projects.title">Proyectos</h1>
-    <div class="page-hero__line"></div>
-  </section>
-
-
-  <!-- ========== FILTROS ========== -->
-  <div class="filters">
-    <button class="filters__btn active" data-filter="all" data-i18n="filter.all">All</button>
-<button class="filters__btn" data-filter="film" data-i18n="filter.films">Films</button>
-<button class="filters__btn" data-filter="tv-series" data-i18n="filter.series">TV Series</button>
-<button class="filters__btn" data-filter="other" data-i18n="filter.other">Other Projects</button>
-  </div>
-
-
-  <!-- ========== GRILLA DE PROYECTOS ========== -->
-  <section class="projects-page">
-    <div class="projects-page__grid" id="projectsGrid">
-
-      <!-- 
+    <!-- ========== GRILLA DE PROYECTOS ========== -->
+    <section class="projects-page">
+      <div class="projects-page__grid" id="projectsGrid">
+        <!-- 
         Cada card tiene data-category con la categoría correspondiente:
         film | tv-series | other
         Al reemplazar con proyectos reales, solo cambiás:
@@ -112,188 +172,265 @@
           - Título y meta
       -->
 
-      <article class="pcard" data-category="film">
-        <a href="./moviesDetails.html?id=1" class="pcard__link">
-          <div class="pcard__img-wrap">
-            <img src="./images/posters/wakolda-poster.jpg" alt="Película 1" loading="lazy" />
-            <div class="pcard__info">
-              <h3 class="pcard__title">Título de Película</h3>
-              <p class="pcard__meta">Film · 2024</p>
+        <article class="pcard" data-category="film">
+          <a href="./moviesDetails.html?id=1" class="pcard__link">
+            <div class="pcard__img-wrap">
+              <img
+                src="./images/posters/wakolda-poster.jpg"
+                alt="Película 1"
+                loading="lazy"
+              />
+              <div class="pcard__info">
+                <h3 class="pcard__title">Título de Película</h3>
+                <p class="pcard__meta">Film · 2024</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
+          </a>
+        </article>
 
-      <article class="pcard" data-category="tv-series">
-        <a href="./moviesDetails.html?id=2" class="pcard__link">
-          <div class="pcard__img-wrap">
-            <img src="./images/posters/carancho-poster.jpg" alt="Serie 1" loading="lazy" />
-            <div class="pcard__info">
-              <h3 class="pcard__title">Título de Serie</h3>
-              <p class="pcard__meta">TV Series · 2024</p>
+        <article class="pcard" data-category="tv-series">
+          <a href="./moviesDetails.html?id=2" class="pcard__link">
+            <div class="pcard__img-wrap">
+              <img
+                src="./images/posters/carancho-poster.jpg"
+                alt="Serie 1"
+                loading="lazy"
+              />
+              <div class="pcard__info">
+                <h3 class="pcard__title">Título de Serie</h3>
+                <p class="pcard__meta">TV Series · 2024</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
+          </a>
+        </article>
 
-      <article class="pcard" data-category="film">
-        <a href="./moviesDetails.html?id=3" class="pcard__link">
-          <div class="pcard__img-wrap">
-            <img src="./images/posters/pipa.jpg" alt="Película 2" loading="lazy" />
-            <div class="pcard__info">
-              <h3 class="pcard__title">Título de Película</h3>
-              <p class="pcard__meta">Film · 2023</p>
+        <article class="pcard" data-category="film">
+          <a href="./moviesDetails.html?id=3" class="pcard__link">
+            <div class="pcard__img-wrap">
+              <img
+                src="./images/posters/pipa.jpg"
+                alt="Película 2"
+                loading="lazy"
+              />
+              <div class="pcard__info">
+                <h3 class="pcard__title">Título de Película</h3>
+                <p class="pcard__meta">Film · 2023</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
+          </a>
+        </article>
 
-      <article class="pcard" data-category="other">
-        <a href="./moviesDetails.html?id=4" class="pcard__link">
-          <div class="pcard__img-wrap">
-            <img src="./images/posters/luna.jpg" alt="Proyecto 1" loading="lazy" />
-            <div class="pcard__info">
-              <h3 class="pcard__title">Luna de Avellaneda</h3>
-              <p class="pcard__meta">Other · 2023</p>
+        <article class="pcard" data-category="other">
+          <a href="./moviesDetails.html?id=4" class="pcard__link">
+            <div class="pcard__img-wrap">
+              <img
+                src="./images/posters/luna.jpg"
+                alt="Proyecto 1"
+                loading="lazy"
+              />
+              <div class="pcard__info">
+                <h3 class="pcard__title">Luna de Avellaneda</h3>
+                <p class="pcard__meta">Other · 2023</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
+          </a>
+        </article>
 
-      <article class="pcard" data-category="tv-series">
-        <a href="moviesDetails.html?id=5" class="pcard__link">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1560109947-543149eceb16?w=600&q=80" alt="Serie 2" loading="lazy" />
-            <div class="pcard__info">
-              <h3 class="pcard__title">Título de Serie</h3>
-              <p class="pcard__meta">TV Series · 2023</p>
+        <article class="pcard" data-category="tv-series">
+          <a href="moviesDetails.html?id=5" class="pcard__link">
+            <div class="pcard__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1560109947-543149eceb16?w=600&q=80"
+                alt="Serie 2"
+                loading="lazy"
+              />
+              <div class="pcard__info">
+                <h3 class="pcard__title">Título de Serie</h3>
+                <p class="pcard__meta">TV Series · 2023</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
+          </a>
+        </article>
 
-      <article class="pcard" data-category="film">
-        <a href="moviesDetails.html?id=6" class="pcard__link">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=600&q=80" alt="Película 3" loading="lazy" />
-            <div class="pcard__info">
-              <h3 class="pcard__title">Título de Película</h3>
-              <p class="pcard__meta">Film · 2022</p>
+        <article class="pcard" data-category="film">
+          <a href="moviesDetails.html?id=6" class="pcard__link">
+            <div class="pcard__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=600&q=80"
+                alt="Película 3"
+                loading="lazy"
+              />
+              <div class="pcard__info">
+                <h3 class="pcard__title">Título de Película</h3>
+                <p class="pcard__meta">Film · 2022</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
+          </a>
+        </article>
 
-      <article class="pcard" data-category="other">
-        <a href="moviesDetails.html?id=7" class="pcard__link">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=600&q=80" alt="Proyecto 2" loading="lazy" />
-            <div class="pcard__info">
-              <h3 class="pcard__title">Título de Proyecto</h3>
-              <p class="pcard__meta">Other · 2022</p>
+        <article class="pcard" data-category="other">
+          <a href="moviesDetails.html?id=7" class="pcard__link">
+            <div class="pcard__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=600&q=80"
+                alt="Proyecto 2"
+                loading="lazy"
+              />
+              <div class="pcard__info">
+                <h3 class="pcard__title">Título de Proyecto</h3>
+                <p class="pcard__meta">Other · 2022</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
+          </a>
+        </article>
 
-      <article class="pcard" data-category="film">
-        <a href="moviesDetails.html?id=8" class="pcard__link">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=600&q=80" alt="Película 4" loading="lazy" />
-            <div class="pcard__info">
-              <h3 class="pcard__title">Título de Película</h3>
-              <p class="pcard__meta">Film · 2021</p>
+        <article class="pcard" data-category="film">
+          <a href="moviesDetails.html?id=8" class="pcard__link">
+            <div class="pcard__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=600&q=80"
+                alt="Película 4"
+                loading="lazy"
+              />
+              <div class="pcard__info">
+                <h3 class="pcard__title">Título de Película</h3>
+                <p class="pcard__meta">Film · 2021</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
+          </a>
+        </article>
 
-      <article class="pcard" data-category="tv-series">
-        <a href="moviesDetails.html?id=9" class="pcard__link">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80" alt="Serie 3" loading="lazy" />
-            <div class="pcard__info">
-              <h3 class="pcard__title">Título de Serie</h3>
-              <p class="pcard__meta">TV Series · 2021</p>
+        <article class="pcard" data-category="tv-series">
+          <a href="moviesDetails.html?id=9" class="pcard__link">
+            <div class="pcard__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80"
+                alt="Serie 3"
+                loading="lazy"
+              />
+              <div class="pcard__info">
+                <h3 class="pcard__title">Título de Serie</h3>
+                <p class="pcard__meta">TV Series · 2021</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
+          </a>
+        </article>
 
-      <article class="pcard" data-category="film">
-        <a href="moviesDetails.html?id=10" class="pcard__link">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&q=80" alt="Película 5" loading="lazy" />
-            <div class="pcard__info">
-              <h3 class="pcard__title">Título de Película</h3>
-              <p class="pcard__meta">Film · 2020</p>
+        <article class="pcard" data-category="film">
+          <a href="moviesDetails.html?id=10" class="pcard__link">
+            <div class="pcard__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&q=80"
+                alt="Película 5"
+                loading="lazy"
+              />
+              <div class="pcard__info">
+                <h3 class="pcard__title">Título de Película</h3>
+                <p class="pcard__meta">Film · 2020</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
+          </a>
+        </article>
 
-      <article class="pcard" data-category="other">
-        <a href="moviesDetails.html?id=11" class="pcard__link">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=600&q=80" alt="Proyecto 3" loading="lazy" />
-            <div class="pcard__info">
-              <h3 class="pcard__title">Título de Proyecto</h3>
-              <p class="pcard__meta">Other · 2020</p>
+        <article class="pcard" data-category="other">
+          <a href="moviesDetails.html?id=11" class="pcard__link">
+            <div class="pcard__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=600&q=80"
+                alt="Proyecto 3"
+                loading="lazy"
+              />
+              <div class="pcard__info">
+                <h3 class="pcard__title">Título de Proyecto</h3>
+                <p class="pcard__meta">Other · 2020</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
+          </a>
+        </article>
 
-      <article class="pcard" data-category="tv-series">
-        <a href="moviesDetails.html?id=12" class="pcard__link">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=80" alt="Serie 4" loading="lazy" />
-            <div class="pcard__info">
-              <h3 class="pcard__title">Título de Serie</h3>
-              <p class="pcard__meta">TV Series · 2019</p>
+        <article class="pcard" data-category="tv-series">
+          <a href="moviesDetails.html?id=12" class="pcard__link">
+            <div class="pcard__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=80"
+                alt="Serie 4"
+                loading="lazy"
+              />
+              <div class="pcard__info">
+                <h3 class="pcard__title">Título de Serie</h3>
+                <p class="pcard__meta">TV Series · 2019</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
-
-    </div>
-  </section>
-
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-
-    <div class="footer__main">
-      <div class="footer__brand">
-        <a href="index.html" class="footer__name">Matías Martinez</a>
-        <p class="footer__role" data-i18n="hero.label">Director de Arte</p>
+          </a>
+        </article>
       </div>
-      <nav class="footer__nav">
-        <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
-        <a href="bio.html" data-i18n="nav.bio">Biografía</a>
-        <a href="contact.html" data-i18n="nav.contact">Contacto</a>
-      </nav>
-      <div class="footer__socials">
-        <a href="https://www.instagram.com/USUARIO" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/USUARIO" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.youtube.com/@USUARIO" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.imdb.com/name/USUARIO/" target="_blank" rel="noopener" aria-label="IMDB"><i class="fab fa-imdb"></i></a>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__name">Matías Martinez</a>
+          <p class="footer__role" data-i18n="hero.label">Director de Arte</p>
+        </div>
+        <nav class="footer__nav">
+          <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
+          <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+          <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <div class="footer__socials">
+          <a
+            href="https://www.instagram.com/USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.imdb.com/name/USUARIO/"
+            target="_blank"
+            rel="noopener"
+            aria-label="IMDB"
+            ><i class="fab fa-imdb"></i
+          ></a>
+        </div>
       </div>
-    </div>
 
-    <div class="footer__divider"></div>
+      <div class="footer__divider"></div>
 
-    <div class="footer__bottom">
-      <p class="footer__copy">© <span id="footerYear"></span> Matías Martinez · Todos los derechos reservados</p>
-      <p class="footer__credit">Design by <a href="https://www.saviadigital.com.ar" target="_blank" rel="noopener">Savia Digital</a></p>
-    </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          © <span id="footerYear"></span> Matías Martinez · Todos los derechos
+          reservados
+        </p>
+        <p class="footer__credit">
+          Design by
+          <a
+            href="https://www.saviadigital.com.ar"
+            target="_blank"
+            rel="noopener"
+            >Savia Digital</a
+          >
+        </p>
+      </div>
+    </footer>
 
-  </footer>
-
-
-  <!-- ========== SCRIPTS ========== -->
-  <script src="js/main.js"></script>
-  <script src="js/projects.js"></script>
-
-</body>
+    <!-- ========== SCRIPTS ========== -->
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
 </html>

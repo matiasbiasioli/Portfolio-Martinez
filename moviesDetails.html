@@ -1,246 +1,330 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Detalle de proyecto – Matías Martinez" />
-  <title>Proyecto – Matías Martinez</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Detalle de proyecto – Matías Martinez" />
+    <title>Proyecto – Matías Martinez</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/moviesDetails.css" />
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/moviesDetails.css" />
+  </head>
 
-<body class="page-movie">
-
-  <!-- ========== NAVEGACIÓN ========== -->
-  <header class="nav scrolled" id="navbar">
-    <div class="nav__logo">
-      <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
-    </div>
-
-    <nav class="nav__links">
-      <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
-      <a href="bio.html" data-i18n="nav.bio">Biografía</a>
-      <a href="contact.html" data-i18n="nav.contact">Contacto</a>
-    </nav>
-
-    <div class="nav__actions">
-      <div class="nav__socials">
-        <a href="https://www.instagram.com/USUARIO" target="_blank" rel="noopener" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/USUARIO" target="_blank" rel="noopener" aria-label="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.youtube.com/@USUARIO" target="_blank" rel="noopener" aria-label="YouTube">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://www.imdb.com/name/USUARIO/" target="_blank" rel="noopener" aria-label="IMDB">
-          <i class="fab fa-imdb"></i>
-        </a>
+  <body class="page-movie">
+    <!-- ========== NAVEGACIÓN ========== -->
+    <header class="nav scrolled" id="navbar">
+      <div class="nav__logo">
+        <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
       </div>
 
-      <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
-        <span class="lang-toggle__option active" data-lang="es">ES</span>
-        <span class="lang-toggle__divider">/</span>
-        <span class="lang-toggle__option" data-lang="en">EN</span>
-      </button>
-
-      <button class="nav__hamburger" id="hamburger" aria-label="Menú">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <div class="nav__mobile" id="mobileMenu">
-      <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
-      <a href="bio.html" data-i18n="nav.bio">Biografía</a>
-      <a href="contact.html" data-i18n="nav.contact">Contacto</a>
-      <div class="nav__mobile-socials">
-        <a href="https://www.instagram.com/USUARIO" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/USUARIO" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.youtube.com/@USUARIO" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.imdb.com/name/USUARIO/" target="_blank" aria-label="IMDB"><i class="fab fa-imdb"></i></a>
-      </div>
-    </div>
-  </header>
-
-
-  <!-- ========== HERO – IMAGEN DE FONDO ========== -->
-  <section class="movie-hero" id="movieHero">
-    <div class="movie-hero__bg" id="movieHeroBg"></div>
-    <div class="movie-hero__overlay"></div>
-  </section>
-
-
-  <!-- ========== DETALLE PRINCIPAL: TRAILER + FICHA ========== -->
-  <!-- ========== DETALLE PRINCIPAL: IMAGEN + FICHA ========== -->
-<section class="movie-main">
-
-  <!-- Columna izquierda: Imagen de escena -->
-  <div class="movie-scene-img">
-    <img id="movieSceneImg" src="" alt="Escena" />
-  </div>
-
-  <!-- Columna derecha: Ficha técnica -->
-  <div class="movie-info">
-    <p class="movie-info__categoria" id="movieCategoria"></p>
-    <h1 class="movie-info__titulo" id="movieTitulo"></h1>
-    <div class="movie-info__line"></div>
-
-    <dl class="movie-info__ficha">
-      <div class="movie-info__row">
-        <dt data-i18n="movie.director">Director</dt>
-        <dd id="movieDirector"></dd>
-      </div>
-      <div class="movie-info__row">
-        <dt data-i18n="movie.año">Año</dt>
-        <dd id="movieAño"></dd>
-      </div>
-      <div class="movie-info__row">
-        <dt data-i18n="movie.rol">Rol</dt>
-        <dd id="movieRol"></dd>
-      </div>
-    </dl>
-
-    <a href="projects.html" class="movie-info__back">
-      <i class="fas fa-arrow-left"></i>
-      <span data-i18n="movie.back">Volver a proyectos</span>
-    </a>
-  </div>
-
-</section>
-
-
-<!-- ========== TRAILER ========== -->
-<section class="movie-trailer-section">
-  <div class="section-header">
-    <h2 class="section-title" data-i18n="movie.trailer">Trailer</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="movie-trailer-wrap">
-    <iframe
-      id="movieTrailer"
-      src=""
-      title="Trailer"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-  </div>
-</section>
-
-
-  <!-- ========== GALERÍA DE ESCENAS ========== -->
-  <section class="movie-gallery" id="movieGallery">
-
-    <div class="section-header">
-      <h2 class="section-title" data-i18n="movie.scenes">Fotografía de Escenas</h2>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="movie-gallery__grid" id="movieGalleryGrid">
-      <!-- Se rellena dinámicamente con JS -->
-    </div>
-
-  </section>
-
-
-  <!-- ========== WORK IN PROGRESS ========== -->
-  <section class="movie-wip" id="movieWip">
-
-    <div class="section-header">
-      <h2 class="section-title" data-i18n="movie.wip">Work in Progress</h2>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="movie-wip__grid" id="movieWipGrid">
-      <!-- Se rellena dinámicamente con JS -->
-      <!-- Si no hay imágenes muestra un placeholder -->
-    </div>
-
-  </section>
-
-
-  <!-- ========== MODAL TRAILER ========== -->
-  <div class="modal-trailer" id="modalTrailer">
-    <div class="modal-trailer__backdrop" id="modalBackdrop"></div>
-    <div class="modal-trailer__content">
-      <button class="modal-trailer__close" id="modalClose" aria-label="Cerrar">
-        <i class="fas fa-times"></i>
-      </button>
-      <div class="modal-trailer__video">
-        <iframe
-          id="modalIframe"
-          src=""
-          title="Trailer completo"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- ========== LIGHTBOX GALERÍA ========== -->
-  <div class="lightbox" id="lightbox">
-    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
-    <div class="lightbox__content">
-      <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">
-        <i class="fas fa-times"></i>
-      </button>
-      <button class="lightbox__prev" id="lightboxPrev" aria-label="Anterior">
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
-      <button class="lightbox__next" id="lightboxNext" aria-label="Siguiente">
-        <i class="fas fa-chevron-right"></i>
-      </button>
-      <p class="lightbox__counter" id="lightboxCounter"></p>
-    </div>
-  </div>
-
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="footer__main">
-      <div class="footer__brand">
-        <a href="index.html" class="footer__name">Matías Martinez</a>
-        <p class="footer__role" data-i18n="hero.label">Director de Arte</p>
-      </div>
-      <nav class="footer__nav">
+      <nav class="nav__links">
         <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
         <a href="bio.html" data-i18n="nav.bio">Biografía</a>
         <a href="contact.html" data-i18n="nav.contact">Contacto</a>
       </nav>
-      <div class="footer__socials">
-        <a href="https://www.instagram.com/USUARIO" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/USUARIO" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.youtube.com/@USUARIO" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.imdb.com/name/USUARIO/" target="_blank" rel="noopener" aria-label="IMDB"><i class="fab fa-imdb"></i></a>
+
+      <div class="nav__actions">
+        <div class="nav__socials">
+          <a
+            href="https://www.instagram.com/USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.imdb.com/name/USUARIO/"
+            target="_blank"
+            rel="noopener"
+            aria-label="IMDB"
+          >
+            <i class="fab fa-imdb"></i>
+          </a>
+        </div>
+
+        <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+          <span class="lang-toggle__option active" data-lang="es">ES</span>
+          <span class="lang-toggle__divider">/</span>
+          <span class="lang-toggle__option" data-lang="en">EN</span>
+        </button>
+
+        <button class="nav__hamburger" id="hamburger" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="nav__mobile" id="mobileMenu">
+        <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
+        <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+        <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+        <div class="nav__mobile-socials">
+          <a
+            href="https://www.instagram.com/USUARIO"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/USUARIO"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@USUARIO"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.imdb.com/name/USUARIO/"
+            target="_blank"
+            aria-label="IMDB"
+            ><i class="fab fa-imdb"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== HERO – IMAGEN DE FONDO ========== -->
+    <section class="movie-hero" id="movieHero">
+      <div class="movie-hero__bg" id="movieHeroBg"></div>
+      <div class="movie-hero__overlay"></div>
+    </section>
+
+    <!-- ========== DETALLE PRINCIPAL: TRAILER + FICHA ========== -->
+    <!-- ========== DETALLE PRINCIPAL: IMAGEN + FICHA ========== -->
+    <section class="movie-main">
+      <!-- Columna izquierda: Imagen de escena -->
+      <div class="movie-scene-img">
+        <img id="movieSceneImg" src="" alt="Escena" />
+      </div>
+
+      <!-- Columna derecha: Ficha técnica -->
+      <div class="movie-info">
+        <p class="movie-info__categoria" id="movieCategoria"></p>
+        <h1 class="movie-info__titulo" id="movieTitulo"></h1>
+        <div class="movie-info__line"></div>
+
+        <dl class="movie-info__ficha">
+          <div class="movie-info__row">
+            <dt data-i18n="movie.director">Director</dt>
+            <dd id="movieDirector"></dd>
+          </div>
+          <div class="movie-info__row">
+            <dt data-i18n="movie.año">Año</dt>
+            <dd id="movieAño"></dd>
+          </div>
+          <div class="movie-info__row">
+            <dt data-i18n="movie.rol">Rol</dt>
+            <dd id="movieRol"></dd>
+          </div>
+        </dl>
+
+        <a href="projects.html" class="movie-info__back">
+          <i class="fas fa-arrow-left"></i>
+          <span data-i18n="movie.back">Volver a proyectos</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== TRAILER ========== -->
+    <section class="movie-trailer-section">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="movie.trailer">Trailer</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="movie-trailer-wrap">
+        <iframe
+          id="movieTrailer"
+          src=""
+          title="Trailer"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+          "
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- ========== GALERÍA DE ESCENAS ========== -->
+    <section class="movie-gallery" id="movieGallery">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="movie.scenes">
+          Fotografía de Escenas
+        </h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="movie-gallery__grid" id="movieGalleryGrid">
+        <!-- Se rellena dinámicamente con JS -->
+      </div>
+    </section>
+
+    <!-- ========== WORK IN PROGRESS ========== -->
+    <section class="movie-wip" id="movieWip">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="movie.wip">Work in Progress</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="movie-wip__grid" id="movieWipGrid">
+        <!-- Se rellena dinámicamente con JS -->
+        <!-- Si no hay imágenes muestra un placeholder -->
+      </div>
+    </section>
+
+    <!-- ========== MODAL TRAILER ========== -->
+    <div class="modal-trailer" id="modalTrailer">
+      <div class="modal-trailer__backdrop" id="modalBackdrop"></div>
+      <div class="modal-trailer__content">
+        <button
+          class="modal-trailer__close"
+          id="modalClose"
+          aria-label="Cerrar"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-trailer__video">
+          <iframe
+            id="modalIframe"
+            src=""
+            title="Trailer completo"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
-    <div class="footer__divider"></div>
-    <div class="footer__bottom">
-      <p class="footer__copy">© <span id="footerYear"></span> Matías Martinez · Todos los derechos reservados</p>
-      <p class="footer__credit">Design by <a href="https://www.saviadigital.com.ar" target="_blank" rel="noopener">Savia Digital</a></p>
+
+    <!-- ========== LIGHTBOX GALERÍA ========== -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+      <div class="lightbox__content">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">
+          <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox__prev" id="lightboxPrev" aria-label="Anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+        <button class="lightbox__next" id="lightboxNext" aria-label="Siguiente">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <p class="lightbox__counter" id="lightboxCounter"></p>
+      </div>
     </div>
-  </footer>
 
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__name">Matías Martinez</a>
+          <p class="footer__role" data-i18n="hero.label">Director de Arte</p>
+        </div>
+        <nav class="footer__nav">
+          <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
+          <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+          <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <div class="footer__socials">
+          <a
+            href="https://www.instagram.com/USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/@USUARIO"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.imdb.com/name/USUARIO/"
+            target="_blank"
+            rel="noopener"
+            aria-label="IMDB"
+            ><i class="fab fa-imdb"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          © <span id="footerYear"></span> Matías Martinez · Todos los derechos
+          reservados
+        </p>
+        <p class="footer__credit">
+          Design by
+          <a
+            href="https://www.saviadigital.com.ar"
+            target="_blank"
+            rel="noopener"
+            >Savia Digital</a
+          >
+        </p>
+      </div>
+    </footer>
 
-  <!-- ========== SCRIPTS ========== -->
-  <script src="js/main.js"></script>
-  <script src="js/moviesDetails.js"></script>
-
-</body>
+    <!-- ========== SCRIPTS ========== -->
+    <script src="js/main.js"></script>
+    <script src="js/moviesDetails.js"></script>
+  </body>
 </html>
