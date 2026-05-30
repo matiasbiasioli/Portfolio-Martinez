@@ -154,11 +154,6 @@ function renderWip(wip) {
 
   // Si no hay imágenes muestra placeholder
   if (!wip || wip.length === 0) {
-    grid.innerHTML = `
-      <div class="movie-wip__placeholder">
-        Próximamente
-      </div>
-    `;
     return;
   }
 
