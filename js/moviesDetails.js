@@ -48,7 +48,6 @@ console.log('buscando id:', id);
 /* ============================================================
    2. RENDERIZAR LA PELÍCULA EN LA PÁGINA
    ============================================================ */
-
 function renderMovie(movie) {
 
   // Título de la pestaña del navegador
@@ -58,6 +57,13 @@ function renderMovie(movie) {
   const heroBg = document.getElementById('movieHeroBg');
   if (heroBg) {
     heroBg.style.backgroundImage = `url('${movie.imagen_hero}')`;
+  }
+
+  // Imagen de escena lado izquierdo
+  const sceneImg = document.getElementById('movieSceneImg');
+  if (sceneImg && movie.imagen_hero) {
+    sceneImg.src = movie.imagen_hero;
+    sceneImg.alt = movie.titulo;
   }
 
   // Categoría
@@ -93,6 +99,7 @@ function renderMovie(movie) {
   // Work in Progress
   renderWip(movie.wip);
 }
+
 
 
 /* ============================================================

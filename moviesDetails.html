@@ -83,56 +83,61 @@
 
 
   <!-- ========== DETALLE PRINCIPAL: TRAILER + FICHA ========== -->
-  <section class="movie-main">
+  <!-- ========== DETALLE PRINCIPAL: IMAGEN + FICHA ========== -->
+<section class="movie-main">
 
-    <!-- Columna izquierda: Trailer -->
-    <div class="movie-trailer">
-      <div class="movie-trailer__wrap">
-        <iframe
-          id="movieTrailer"
-          src=""
-          title="Trailer"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+  <!-- Columna izquierda: Imagen de escena -->
+  <div class="movie-scene-img">
+    <img id="movieSceneImg" src="" alt="Escena" />
+  </div>
+
+  <!-- Columna derecha: Ficha técnica -->
+  <div class="movie-info">
+    <p class="movie-info__categoria" id="movieCategoria"></p>
+    <h1 class="movie-info__titulo" id="movieTitulo"></h1>
+    <div class="movie-info__line"></div>
+
+    <dl class="movie-info__ficha">
+      <div class="movie-info__row">
+        <dt data-i18n="movie.director">Director</dt>
+        <dd id="movieDirector"></dd>
       </div>
-      <!-- Botón para abrir el trailer en modal grande -->
-      <button class="movie-trailer__expand" id="trailerExpand" aria-label="Ver en pantalla completa">
-        <i class="fas fa-expand"></i>
-        <span data-i18n="movie.expand">Ver en pantalla completa</span>
-      </button>
-    </div>
+      <div class="movie-info__row">
+        <dt data-i18n="movie.año">Año</dt>
+        <dd id="movieAño"></dd>
+      </div>
+      <div class="movie-info__row">
+        <dt data-i18n="movie.rol">Rol</dt>
+        <dd id="movieRol"></dd>
+      </div>
+    </dl>
 
-    <!-- Columna derecha: Ficha técnica -->
-    <div class="movie-info">
-      <p class="movie-info__categoria" id="movieCategoria"></p>
-      <h1 class="movie-info__titulo" id="movieTitulo"></h1>
-      <div class="movie-info__line"></div>
+    <a href="projects.html" class="movie-info__back">
+      <i class="fas fa-arrow-left"></i>
+      <span data-i18n="movie.back">Volver a proyectos</span>
+    </a>
+  </div>
 
-      <dl class="movie-info__ficha">
-        <div class="movie-info__row">
-          <dt data-i18n="movie.director">Director</dt>
-          <dd id="movieDirector"></dd>
-        </div>
-        <div class="movie-info__row">
-          <dt data-i18n="movie.año">Año</dt>
-          <dd id="movieAño"></dd>
-        </div>
-        <div class="movie-info__row">
-          <dt data-i18n="movie.rol">Rol</dt>
-          <dd id="movieRol"></dd>
-        </div>
-      </dl>
+</section>
 
-      <!-- Volver a proyectos -->
-      <a href="projects.html" class="movie-info__back">
-        <i class="fas fa-arrow-left"></i>
-        <span data-i18n="movie.back">Volver a proyectos</span>
-      </a>
-    </div>
 
-  </section>
+<!-- ========== TRAILER ========== -->
+<section class="movie-trailer-section">
+  <div class="section-header">
+    <h2 class="section-title" data-i18n="movie.trailer">Trailer</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="movie-trailer-wrap">
+    <iframe
+      id="movieTrailer"
+      src=""
+      title="Trailer"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+</section>
 
 
   <!-- ========== GALERÍA DE ESCENAS ========== -->

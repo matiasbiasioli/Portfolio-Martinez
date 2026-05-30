@@ -45,66 +45,32 @@
 .movie-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  padding: 5rem 6vw 6rem;
+  gap: 4rem;
+  padding: 5rem 8vw 6rem;
   background: var(--color-bg);
   position: relative;
   z-index: 2;
   margin-top: -6rem;
+  align-items: center;
 }
-
 
 /* ============================================================
-   3. TRAILER
+   3. IMAGEN DE ESCENA
    ============================================================ */
 
-.movie-trailer {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.movie-trailer__wrap {
-  position: relative;
+.movie-scene-img {
   width: 100%;
-  aspect-ratio: 16/9;
   border-radius: 6px;
   overflow: hidden;
-  background: #000;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
 }
 
-.movie-trailer__wrap iframe {
-  position: absolute;
-  inset: 0;
+.movie-scene-img img {
   width: 100%;
   height: 100%;
-  border: none;
+  object-fit: cover;
+  display: block;
 }
-
-.movie-trailer__expand {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-body);
-  font-size: 0.62rem;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--color-muted);
-  align-self: flex-end;
-  transition: color 0.3s var(--ease);
-  padding: 0;
-}
-
-.movie-trailer__expand:hover {
-  color: var(--color-accent);
-}
-
-.movie-trailer__expand i {
-  font-size: 0.7rem;
-}
-
 
 /* ============================================================
    4. FICHA TÉCNICA
@@ -114,7 +80,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 1rem;
   padding-left: 3rem;
 }
 
@@ -144,7 +109,6 @@
   margin-bottom: 2.5rem;
 }
 
-/* Ficha */
 .movie-info__ficha {
   display: flex;
   flex-direction: column;
@@ -175,7 +139,6 @@
   letter-spacing: 0.02em;
 }
 
-/* Botón volver */
 .movie-info__back {
   display: inline-flex;
   align-items: center;
@@ -203,6 +166,62 @@
   transform: translateX(-3px);
 }
 
+/* ============================================================
+   5. TRAILER CENTRADO
+   ============================================================ */
+
+.movie-trailer-section {
+  padding: 4rem 8vw 6rem;
+  background: var(--color-bg);
+}
+
+.movie-trailer-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.movie-trailer-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .movie-main {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: -3rem;
+  }
+
+  .movie-info {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-main {
+    padding: 3rem 6vw 4rem;
+  }
+
+  .movie-trailer-section {
+    padding: 3rem 6vw 4rem;
+  }
+
+  .movie-info__row {
+    grid-template-columns: 90px 1fr;
+  }
+}
 
 /* ============================================================
    5. GALERÍA DE ESCENAS
