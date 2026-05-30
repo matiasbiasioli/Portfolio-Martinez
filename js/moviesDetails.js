@@ -87,7 +87,7 @@ function renderMovie(movie) {
   // Trailer
   const trailerEl = document.getElementById('movieTrailer');
   if (trailerEl && movie.trailer) {
-    trailerEl.src = movie.trailer + '?rel=0&modestbranding=1';
+    trailerEl.src = movie.trailer + '?autoplay=1&mute=1&rel=0&modestbranding=1';
   }
 
   // Guarda la URL del trailer para el modal
