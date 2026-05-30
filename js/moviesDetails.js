@@ -87,7 +87,7 @@ function renderMovie(movie) {
   // Trailer
   const trailerEl = document.getElementById('movieTrailer');
   if (trailerEl && movie.trailer) {
-    trailerEl.src = movie.trailer + '?autoplay=1&mute=1&rel=0&modestbranding=1';
+    trailerEl.src = movie.trailer + '?rel=0&modestbranding=1';
   }
 
   // Guarda la URL del trailer para el modal
@@ -98,9 +98,9 @@ function renderMovie(movie) {
 
   // Work in Progress
   renderWip(movie.wip);
+  // Comienzo de Trailer
+  setTimeout(initTrailerAutoplay, 500);
 }
-
-
 
 /* ============================================================
    3. GALERÍA DE ESCENAS
@@ -319,6 +319,35 @@ function showError() {
     </div>
   `;
 }
+
+/* ============================================================
+   AUTOPLAY TRAILER AL HACER SCROLL
+   ============================================================ */
+
+function initTrailerAutoplay() {
+  const trailerWrap = document.querySelector('.movie-trailer-wrap');
+  const trailerEl = document.getElementById('movieTrailer');
+
+  if (!trailerWrap || !trailerEl) return;
+
+  let played = false;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !played) {
+        const src = trailerEl.src;
+        trailerEl.src = src + '&autoplay=1';
+        played = true;
+        observer.unobserve(trailerWrap);
+      }
+    });
+  }, {
+    threshold: 0.8
+  });
+
+  observer.observe(trailerWrap);
+}
+
 
 /* ============================================================
    10. INICIO
