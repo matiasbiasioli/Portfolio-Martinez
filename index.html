@@ -25,19 +25,128 @@
 
   <body>
     <!-- ========== NAVEGACIÓN ========== -->
-    <header class="nav" id="navbar">
-      <div class="nav__logo">
-        <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
-      </div>
+    <!-- NAV OPCION I -->
+    <template>
+      <header class="nav" id="navbar">
+        <div class="nav__logo">
+          <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
+        </div>
 
+        <nav class="nav__links">
+          <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+          <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+          <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+        </nav>
+
+        <div class="nav__actions">
+          <!-- Redes sociales -->
+          <div class="nav__socials">
+            <a
+              href="https://www.instagram.com/USUARIO"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/USUARIO"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@USUARIO"
+              target="_blank"
+              rel="noopener"
+              aria-label="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.imdb.com/name/USUARIO/"
+              target="_blank"
+              rel="noopener"
+              aria-label="IMDB"
+            >
+              <i class="fab fa-imdb"></i>
+            </a>
+          </div>
+
+          <!-- Toggle idioma -->
+          <button
+            class="lang-toggle"
+            id="langToggle"
+            aria-label="Cambiar idioma"
+          >
+            <span class="lang-toggle__option active" data-lang="es">ES</span>
+            <span class="lang-toggle__divider">/</span>
+            <span class="lang-toggle__option" data-lang="en">EN</span>
+          </button>
+
+          <!-- Hamburger mobile -->
+          <button class="nav__hamburger" id="hamburger" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <!-- Menú mobile -->
+        <div class="nav__mobile" id="mobileMenu">
+          <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+          <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+          <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+
+          <!-- Redes en mobile -->
+          <div class="nav__mobile-socials">
+            <a
+              href="https://www.instagram.com/USUARIO"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/USUARIO"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@USUARIO"
+              target="_blank"
+              aria-label="YouTube"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              href="https://www.imdb.com/name/USUARIO/"
+              target="_blank"
+              aria-label="IMDB"
+              ><i class="fab fa-imdb"></i
+            ></a>
+          </div>
+        </div>
+      </header>
+    </template>
+
+    <!-- NAV NUEVO OPCION II -->
+    <header class="nav nav--centered" id="navbar">
+      <!-- Links izquierda -->
       <nav class="nav__links">
         <a href="#projects" data-i18n="nav.projects">Proyectos</a>
         <a href="bio.html" data-i18n="nav.bio">Biografía</a>
         <a href="contact.html" data-i18n="nav.contact">Contacto</a>
       </nav>
 
-      <div class="nav__actions">
-        <!-- Redes sociales -->
+      <!-- Logo centro -->
+      <div class="nav__logo">
+        <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
+      </div>
+
+      <!-- Redes + idioma derecha -->
+      <div class="nav__right">
         <div class="nav__socials">
           <a
             href="https://www.instagram.com/USUARIO"
@@ -73,7 +182,6 @@
           </a>
         </div>
 
-        <!-- Toggle idioma -->
         <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
           <span class="lang-toggle__option active" data-lang="es">ES</span>
           <span class="lang-toggle__divider">/</span>
@@ -93,8 +201,6 @@
         <a href="#projects" data-i18n="nav.projects">Proyectos</a>
         <a href="bio.html" data-i18n="nav.bio">Biografía</a>
         <a href="contact.html" data-i18n="nav.contact">Contacto</a>
-
-        <!-- Redes en mobile -->
         <div class="nav__mobile-socials">
           <a
             href="https://www.instagram.com/USUARIO"
@@ -203,7 +309,7 @@
               />
             </div>
             <div class="project-card__info">
-              <h3 class="project-card__title">Título de Película</h3>
+              <h3 class="project-card__title">Carancho</h3>
               <p class="project-card__meta">Dirección de Arte</p>
             </div>
           </a>
@@ -213,14 +319,14 @@
           <a href="moviesDetails.html?id=2" class="project-card__link">
             <div class="project-card__img-wrap">
               <img
-                src="./images/posters/pipa.jpg"
+                src="./images/posters/adios-buenos-aires.jpg"
                 alt="Película 2"
                 loading="lazy"
                 class="project-card__img"
               />
             </div>
             <div class="project-card__info">
-              <h3 class="project-card__title">Título de Película</h3>
+              <h3 class="project-card__title">Adios Buenos Aires</h3>
               <p class="project-card__meta">Diseño de Producción</p>
             </div>
           </a>
@@ -230,14 +336,14 @@
           <a href="moviesDetails.html?id=3" class="project-card__link">
             <div class="project-card__img-wrap">
               <img
-                src="./images/posters/wakolda-poster.jpg"
+                src="./images/posters/pipa.jpg"
                 alt="Película 3"
                 loading="lazy"
                 class="project-card__img"
               />
             </div>
             <div class="project-card__info">
-              <h3 class="project-card__title">Título de Película</h3>
+              <h3 class="project-card__title">Pipa</h3>
               <p class="project-card__meta">Dirección de Arte</p>
             </div>
           </a>
@@ -254,7 +360,7 @@
               />
             </div>
             <div class="project-card__info">
-              <h3 class="project-card__title">Título de Película</h3>
+              <h3 class="project-card__title">Luna de Avellaneda</h3>
               <p class="project-card__meta">Diseño de Producción</p>
             </div>
           </a>
@@ -264,14 +370,14 @@
           <a href="moviesDetails.html?id=5" class="project-card__link">
             <div class="project-card__img-wrap">
               <img
-                src="https://images.unsplash.com/photo-1560109947-543149eceb16?w=600&q=80"
+                src="./images/posters/cromo.jpg"
                 alt="Película 5"
                 loading="lazy"
                 class="project-card__img"
               />
             </div>
             <div class="project-card__info">
-              <h3 class="project-card__title">Título de Película</h3>
+              <h3 class="project-card__title">Cromo</h3>
               <p class="project-card__meta">Dirección de Arte</p>
             </div>
           </a>
@@ -281,14 +387,14 @@
           <a href="moviesDetails.html?id=6" class="project-card__link">
             <div class="project-card__img-wrap">
               <img
-                src="https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=600&q=80"
+                src="./images/posters/el-amor-menos-pensado.jpg"
                 alt="Película 6"
                 loading="lazy"
                 class="project-card__img"
               />
             </div>
             <div class="project-card__info">
-              <h3 class="project-card__title">Título de Película</h3>
+              <h3 class="project-card__title">El Amor menos pensado</h3>
               <p class="project-card__meta">Diseño de Producción</p>
             </div>
           </a>
@@ -298,14 +404,14 @@
           <a href="moviesDetails.html?id=7" class="project-card__link">
             <div class="project-card__img-wrap">
               <img
-                src="https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=600&q=80"
+                src="./images/posters/el-aura.jpg"
                 alt="Película 7"
                 loading="lazy"
                 class="project-card__img"
               />
             </div>
             <div class="project-card__info">
-              <h3 class="project-card__title">Título de Película</h3>
+              <h3 class="project-card__title">El Aura</h3>
               <p class="project-card__meta">Dirección de Arte</p>
             </div>
           </a>
@@ -315,14 +421,14 @@
           <a href="moviesDetails.html?id=8" class="project-card__link">
             <div class="project-card__img-wrap">
               <img
-                src="https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=600&q=80"
+                src="./images/posters/el-futbol-o-yo.jpg"
                 alt="Película 8"
                 loading="lazy"
                 class="project-card__img"
               />
             </div>
             <div class="project-card__info">
-              <h3 class="project-card__title">Título de Película</h3>
+              <h3 class="project-card__title">El futbol o yo</h3>
               <p class="project-card__meta">Diseño de Producción</p>
             </div>
           </a>
