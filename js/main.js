@@ -2,7 +2,7 @@
    1. NAVEGACIÓN – scroll + hamburger
    ============================================================ */
 
-const navbar    = document.getElementById('navbar');
+const navbar = document.getElementById('navbar');
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -34,11 +34,11 @@ mobileMenu.querySelectorAll('a').forEach(link => {
    2. HERO – KEN BURNS SLIDER
    ============================================================ */
 
-const slides      = document.querySelectorAll('.hero__slide');
-const slideBgs    = document.querySelectorAll('.hero__slide-bg');
-const dots        = document.querySelectorAll('.hero__dot');
+const slides = document.querySelectorAll('.hero__slide');
+const slideBgs = document.querySelectorAll('.hero__slide-bg');
+const dots = document.querySelectorAll('.hero__dot');
 
-let currentSlide  = 0;
+let currentSlide = 0;
 let slideInterval = null;
 const SLIDE_DURATION = 6000;
 
@@ -98,7 +98,7 @@ if (slides.length > 0) {
 function initReveal() {
   // Targets: cards de proyectos, items del mosaico, section-headers
   const projectCards = document.querySelectorAll('.project-card');
-  const mosaicItems  = document.querySelectorAll('.mosaic__item');
+  const mosaicItems = document.querySelectorAll('.mosaic__item');
   const sectionHeaders = document.querySelectorAll('.section-header');
 
   // Section headers
@@ -148,64 +148,64 @@ createObserver();
 
 const translations = {
   es: {
-    'nav.name':      'Matías Martinez',
-    'nav.projects':  'Proyectos',
-    'nav.bio':       'Biografía',
-    'nav.contact':   'Contacto',
+    'nav.name': 'Matías Martinez',
+    'nav.projects': 'Proyectos',
+    'nav.bio': 'Biografía',
+    'nav.contact': 'Contacto',
 
-    'hero.label':    'Director de Arte',
-    'hero.tagline':  'Cine · Series · Publicidad',
-    'hero.scroll':   'Scroll',
+    'hero.label': 'Director de Arte',
+    'hero.tagline': 'Cine · Series · Publicidad',
+    'hero.scroll': 'Scroll',
 
     'projects.title': 'Proyectos',
-    'projects.view':  'Ver proyecto',
-    'projects.all':   'Ver todos los proyectos',
+    'projects.view': 'Ver proyecto',
+    'projects.all': 'Ver todos los proyectos',
 
-    'mosaic.title':  'Fotografía de Escenas',
+    'mosaic.title': 'Fotografía de Escenas',
 
     'movie.director': 'Director',
-'movie.año':      'Año',
-'movie.rol':      'Rol',
-'movie.scenes':   'Fotografía de Escenas',
-'movie.wip':      'Work in Progress',
-'movie.back':     'Volver a proyectos',
-'movie.expand':   'Ver en pantalla completa',
+    'movie.año': 'Año',
+    'movie.rol': 'Rol',
+    'movie.scenes': 'Fotografía de Escenas',
+    'movie.wip': 'Work in Progress',
+    'movie.back': 'Volver a proyectos',
+    'movie.expand': 'Ver en pantalla completa',
     // dentro de es:
-'filter.all':     'Todo',
-'filter.films':   'Películas',
-'filter.series':  'Series',
-'filter.other':   'Otros proyectos',
+    'filter.all': 'Todo',
+    'filter.films': 'Películas',
+    'filter.series': 'Series',
+    'filter.other': 'Otros proyectos',
 
   },
   en: {
-    'nav.name':      'Matías Martinez',
-    'nav.projects':  'Projects',
-    'nav.bio':       'Biography',
-    'nav.contact':   'Contact',
+    'nav.name': 'Matías Martinez',
+    'nav.projects': 'Projects',
+    'nav.bio': 'Biography',
+    'nav.contact': 'Contact',
 
-    'hero.label':    'Art Director',
-    'hero.tagline':  'Film · Series · Commercials',
-    'hero.scroll':   'Scroll',
+    'hero.label': 'Art Director',
+    'hero.tagline': 'Film · Series · Commercials',
+    'hero.scroll': 'Scroll',
 
     'projects.title': 'Projects',
-    'projects.view':  'View project',
-    'projects.all':   'View all projects',
+    'projects.view': 'View project',
+    'projects.all': 'View all projects',
 
-    'mosaic.title':  'Scene Photography',
+    'mosaic.title': 'Scene Photography',
 
     'movie.director': 'Director',
-    
-'movie.año':      'Year',
-'movie.rol':      'Role',
-'movie.scenes':   'Scene Photography',
-'movie.wip':      'Work in Progress',
-'movie.back':     'Back to projects',
-'movie.expand':   'Full screen',
+
+    'movie.año': 'Year',
+    'movie.rol': 'Role',
+    'movie.scenes': 'Scene Photography',
+    'movie.wip': 'Work in Progress',
+    'movie.back': 'Back to projects',
+    'movie.expand': 'Full screen',
     // dentro de en:
-'filter.all':     'All',
-'filter.films':   'Films',
-'filter.series':  'TV Series',
-'filter.other':   'Other Projects',
+    'filter.all': 'All',
+    'filter.films': 'Films',
+    'filter.series': 'TV Series',
+    'filter.other': 'Other Projects',
   }
 };
 
