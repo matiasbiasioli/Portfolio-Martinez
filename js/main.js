@@ -1,10 +1,4 @@
 /* ============================================================
-   MATÍAS MARTINEZ – DIRECTOR DE ARTE
-   main.js
-   ============================================================ */
-
-
-/* ============================================================
    1. NAVEGACIÓN – scroll + hamburger
    ============================================================ */
 
@@ -271,14 +265,56 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-/* ============================================================
-   6. PRELOADER (opcional – quitar si no se necesita)
-   ============================================================ */
-
-window.addEventListener('load', () => {
-  document.body.classList.add('loaded');
-});
-
 // Año automático en el footer
 const footerYear = document.getElementById('footerYear');
 if (footerYear) footerYear.textContent = new Date().getFullYear();
+
+/* ============================================================
+  7. HOME – PELÍCULAS DESTACADAS
+   ============================================================ */
+
+async function loadHomeProjects() {
+  const grid = document.getElementById('homeProjectsGrid');
+  if (!grid) return;
+
+  try {
+    const response = await fetch('data/movies.json');
+    const movies = await response.json();
+
+    // Filtra solo las destacadas
+    const destacadas = movies.filter(m => m.destacada === true).slice(0, 4);
+
+    destacadas.forEach(movie => {
+      const article = document.createElement('article');
+      article.className = 'project-card reveal';
+
+      article.innerHTML = `
+        <a href="moviesDetails.html?id=${movie.id}" class="project-card__link">
+          <div class="project-card__img-wrap">
+            <img
+              src="${movie.poster}"
+              alt="${movie.titulo}"
+              loading="lazy"
+              class="project-card__img"
+              onerror="this.style.background='#1e1e1e'"
+            />
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">${movie.titulo}</h3>
+            <p class="project-card__meta">${movie.categoria} · ${movie.año}</p>
+          </div>
+        </a>
+      `;
+
+      grid.appendChild(article);
+    });
+
+    // Activa scroll reveal en las cards nuevas
+    createObserver();
+
+  } catch (error) {
+    console.error('Error cargando proyectos destacados:', error);
+  }
+}
+
+loadHomeProjects();

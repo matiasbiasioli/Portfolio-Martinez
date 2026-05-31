@@ -3,6 +3,7 @@
     "id": 1,
     "categoria": "Film",
     "titulo": "Carancho",
+    "destacada": true,
     "director": "Pablo Trapero",
     "año": "2024",
     "rol": "Art Director",
@@ -15,6 +16,7 @@
   {
     "id": 2,
     "categoria": "Film",
+    "destacada": true,
     "titulo": "Adios Buenos Aires",
     "director": "Nombre del Director",
     "año": "2024",
@@ -28,6 +30,7 @@
   {
     "id": 3,
     "categoria": "Film",
+    "destacada": true,
     "titulo": "Pipa",
     "director": "Nombre del Director",
     "año": "2023",
@@ -41,6 +44,7 @@
   {
     "id": 4,
     "categoria": "Other",
+    "destacada": true,
     "titulo": "Luna de Avellaneda",
     "director": "Juan José Campanella",
     "año": "2023",
@@ -176,8 +180,8 @@
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "poster": "./images/posters/la-muerte-no-existe.jpg",
-    "imagen_hero": "./images/posters/la-muerte-no-existe.jpg",
+    "poster": "./images/posters/la-muerte-no-existe.avif",
+    "imagen_hero": "./images/posters/la-muerte-no-existe.avif",
     "escenas": [],
     "wip": []
   },
@@ -267,8 +271,8 @@
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "poster": "./images/posters/two-popes.png.jpg",
-    "imagen_hero": "./images/posters/two-popes.png.jpg",
+    "poster": "./images/posters/two-popes.png",
+    "imagen_hero": "./images/posters/two-popes.png",
     "escenas": [],
     "wip": []
   },
