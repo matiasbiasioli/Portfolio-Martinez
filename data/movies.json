@@ -3,38 +3,26 @@
     "id": 1,
     "categoria": "Film",
     "titulo": "Carancho",
-    "director": "Nombre del Director",
+    "director": "Pablo Trapero",
     "año": "2024",
     "rol": "Art Director",
-    "trailer": "https://www.youtube.com/embed/pkkf4nSrVcI",
-    "imagen_hero": "./images/posters/carancho-poster.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&q=80",
-      "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
-      "https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?w=800&q=80",
-      "https://images.unsplash.com/photo-1500210600724-bf2c61ec56dc?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80"
-    ],
+    "trailer": "https://www.youtube.com/embed/XwFhoTfVxOs",
+    "poster": "./images/posters/carancho-poster.jpg",
+    "imagen_hero": "./images/scenes/carancho-A.jpg",
+    "escenas": [],
     "wip": []
   },
   {
     "id": 2,
-    "categoria": "TV Series",
-    "titulo": "Título de Serie",
-    "director": "Adios Buenos Aires",
+    "categoria": "Film",
+    "titulo": "Adios Buenos Aires",
+    "director": "Nombre del Director",
     "año": "2024",
     "rol": "Production Designer",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "trailer": "https://www.youtube.com/watch?v=nwERTGPQPA8",
+    "poster": "./images/posters/adios-buenos-aires.jpg",
     "imagen_hero": "./images/posters/adios-buenos-aires.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80",
-      "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80",
-      "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&q=80",
-      "https://images.unsplash.com/photo-1560109947-543149eceb16?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -45,46 +33,35 @@
     "año": "2023",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/Y23WSAMdeJ8",
+    "poster": "./images/posters/pipa.jpg",
     "imagen_hero": "./images/posters/pipa.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
-      "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
     "id": 4,
     "categoria": "Other",
     "titulo": "Luna de Avellaneda",
-    "director": "Nombre del Director",
+    "director": "Juan José Campanella",
     "año": "2023",
     "rol": "Art Director",
-    "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "imagen_hero": "./images/posters/luna.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?w=800&q=80",
-      "https://images.unsplash.com/photo-1500210600724-bf2c61ec56dc?w=800&q=80",
-      "https://images.unsplash.com/photo-1560109947-543149eceb16?w=800&q=80"
-    ],
+    "trailer": "https://www.youtube.com/embed/vWJilFAeTLo",
+    "poster": "./images/posters/luna.jpg",
+    "imagen_hero": "./images/scenes/luna-A.jpg",
+    "escenas": [],
     "wip": []
   },
   {
     "id": 5,
     "categoria": "TV Series",
-    "titulo": "Título de Serie",
-    "director": "Cromo",
+    "titulo": "Cromo",
+    "director": "Nombre del Director",
     "año": "2023",
     "rol": "Production Designer",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/cromo.jpg",
     "imagen_hero": "./images/posters/cromo.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80",
-      "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&q=80",
-      "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -95,14 +72,9 @@
     "año": "2022",
     "rol": "Production Designer",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/el-amor-menos-pensado.jpg",
     "imagen_hero": "./images/posters/el-amor-menos-pensado.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&q=80",
-      "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -113,12 +85,9 @@
     "año": "2022",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/el-aura.jpg",
     "imagen_hero": "./images/posters/el-aura.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1500210600724-bf2c61ec56dc?w=800&q=80",
-      "https://images.unsplash.com/photo-1560109947-543149eceb16?w=800&q=80",
-      "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -129,13 +98,9 @@
     "año": "2021",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/el-futbol-o-yo.jpg",
     "imagen_hero": "./images/posters/el-futbol-o-yo.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80",
-      "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -146,12 +111,9 @@
     "año": "2021",
     "rol": "Production Designer",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "imagen_hero": "./images/posters/el-niño-pez",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&q=80",
-      "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80"
-    ],
+    "poster": "./images/posters/el-niño-pez.jpg",
+    "imagen_hero": "./images/posters/el-niño-pez.jpg",
+    "escenas": [],
     "wip": []
   },
   {
@@ -162,13 +124,9 @@
     "año": "2020",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/el-retiro.avif",
     "imagen_hero": "./images/posters/el-retiro.avif",
-    "escenas": [
-      "https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?w=800&q=80",
-      "https://images.unsplash.com/photo-1500210600724-bf2c61ec56dc?w=800&q=80",
-      "https://images.unsplash.com/photo-1560109947-543149eceb16?w=800&q=80",
-      "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -179,11 +137,9 @@
     "año": "2020",
     "rol": "Production Designer",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/el-ultimo-traje.jpg",
     "imagen_hero": "./images/posters/el-ultimo-traje.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80",
-      "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -194,13 +150,9 @@
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/empieza-el-baile.jpeg",
     "imagen_hero": "./images/posters/empieza-el-baile.jpeg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -211,13 +163,9 @@
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/la-corazonada.jpg",
     "imagen_hero": "./images/posters/la-corazonada.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -228,30 +176,22 @@
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/la-muerte-no-existe.jpg",
     "imagen_hero": "./images/posters/la-muerte-no-existe.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
     "id": 15,
     "categoria": "TV Series",
-    "titulo": "Llamame Fransisco",
+    "titulo": "Llamame Francisco",
     "director": "Nombre del Director",
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/llamame-fransisco.jpg",
     "imagen_hero": "./images/posters/llamame-fransisco.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -262,13 +202,9 @@
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/lluvia.webp",
     "imagen_hero": "./images/posters/lluvia.webp",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -279,13 +215,9 @@
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/los-que-aman-odian.jpg",
     "imagen_hero": "./images/posters/los-que-aman-odian.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -296,13 +228,9 @@
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/los-ultimos.jpg",
     "imagen_hero": "./images/posters/los-ultimos.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -313,13 +241,9 @@
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/monoblock.jpg",
     "imagen_hero": "./images/posters/monoblock.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -330,13 +254,9 @@
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/pequeña.jpg",
     "imagen_hero": "./images/posters/pequeña.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -347,13 +267,9 @@
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/two-popes.png.jpg",
     "imagen_hero": "./images/posters/two-popes.png.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
@@ -364,30 +280,22 @@
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/un-tango-mas.avif",
     "imagen_hero": "./images/posters/un-tango-mas.avif",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   },
   {
     "id": 23,
     "categoria": "TV Series",
-    "titulo": "Vientos-de-Agua",
+    "titulo": "Vientos de Agua",
     "director": "Nombre del Director",
     "año": "2019",
     "rol": "Art Director",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "poster": "./images/posters/vientos-de-agua.jpg",
     "imagen_hero": "./images/posters/vientos-de-agua.jpg",
-    "escenas": [
-      "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
-      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
-      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=800&q=80",
-      "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=800&q=80"
-    ],
+    "escenas": [],
     "wip": []
   }
 ]
