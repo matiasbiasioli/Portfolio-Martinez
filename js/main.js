@@ -170,11 +170,12 @@ const translations = {
     'movie.wip': 'Work in Progress',
     'movie.back': 'Volver a proyectos',
     'movie.expand': 'Ver en pantalla completa',
-    // dentro de es:
+    
     'filter.all': 'Todo',
     'filter.films': 'Películas',
     'filter.series': 'Series',
     'filter.other': 'Otros proyectos',
+    'nav.subtitle': 'Dirección de Arte',
 
   },
   en: {
@@ -201,11 +202,12 @@ const translations = {
     'movie.wip': 'Work in Progress',
     'movie.back': 'Back to projects',
     'movie.expand': 'Full screen',
-    // dentro de en:
+    
     'filter.all': 'All',
     'filter.films': 'Films',
     'filter.series': 'TV Series',
     'filter.other': 'Other Projects',
+    'nav.subtitle': 'Production Designer'
   }
 };
 
@@ -318,3 +320,44 @@ async function loadHomeProjects() {
 }
 
 loadHomeProjects();
+
+/* ============================================================
+   HOME – GALERÍA DE ESCENAS
+   ============================================================ */
+
+async function loadHomeMosaic() {
+  const grid = document.getElementById('homeMosaicGrid');
+  if (!grid) return;
+
+  try {
+    const response = await fetch('data/movies.json');
+    const movies = await response.json();
+
+    // Filtra películas que tienen escena_destacada
+    const conEscena = movies.filter(m => m.escena_destacada).slice(0, 9);
+
+    conEscena.forEach(movie => {
+      const item = document.createElement('a');
+      item.href = `moviesDetails.html?id=${movie.id}`;
+      item.className = 'movie-gallery__item';
+
+      item.innerHTML = `
+        <img
+          src="${movie.escena_destacada}"
+          alt="${movie.titulo}"
+          loading="lazy"
+        />
+        <div class="movie-gallery__item__overlay">
+          <i class="fas fa-expand-alt"></i>
+        </div>
+      `;
+
+      grid.appendChild(item);
+    });
+
+  } catch (error) {
+    console.error('Error cargando galería:', error);
+  }
+}
+
+loadHomeMosaic();

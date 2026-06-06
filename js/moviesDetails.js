@@ -53,12 +53,6 @@ function renderMovie(movie) {
   // Título de la pestaña del navegador
   document.title = `${movie.titulo} – Matías Martinez`;
 
-  // Hero – imagen de fondo
-  const heroBg = document.getElementById('movieHeroBg');
-  if (heroBg) {
-    heroBg.style.backgroundImage = `url('${movie.imagen_hero}')`;
-  }
-
   // Imagen de escena lado izquierdo
   const sceneImg = document.getElementById('movieSceneImg');
   if (sceneImg && movie.imagen_hero) {

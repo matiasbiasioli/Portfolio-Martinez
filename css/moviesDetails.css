@@ -5,41 +5,7 @@
 
 
 /* ============================================================
-   1. HERO – IMAGEN DE FONDO
-   ============================================================ */
-
-.movie-hero {
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  min-height: 400px;
-  overflow: hidden;
-  margin-top: var(--nav-height);
-}
-
-.movie-hero__bg {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  transform: scale(1.05);
-  transition: transform 0.8s var(--ease);
-}
-
-.movie-hero__overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0.5) 60%,
-    rgba(0, 0, 0, 0.95) 100%
-  );
-}
-
-
-/* ============================================================
-   2. SECCIÓN PRINCIPAL – TRAILER + FICHA
+   1. SECCIÓN PRINCIPAL – TRAILER + FICHA
    ============================================================ */
 
 .movie-main {
@@ -50,7 +16,7 @@
   background: var(--color-bg);
   position: relative;
   z-index: 2;
-  margin-top: -6rem;
+  margin-top: var(--nav-height);
   align-items: center;
 }
 

@@ -93,7 +93,7 @@ ul {
 
 .section-title {
   font-family: var(--font-title);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   font-weight: 400;
   letter-spacing: 0.1em;
   color: var(--color-white);
@@ -158,7 +158,7 @@ ul {
 
 /* Logo / Nombre */
 .nav__logo a {
-  font-family: var(--font-display);
+  font-family: var(--font-title);
   font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0.12em;
@@ -168,6 +168,15 @@ ul {
 
 .nav__logo a:hover {
   color: var(--color-accent);
+}
+
+.nav__subtitle {
+  font-size: 0.55rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  text-align: center;
 }
 
 /* Links principales */
@@ -376,7 +385,7 @@ ul {
 }
 
 .nav--centered .nav__logo a {
-  font-family: var(--font-display);
+  font-family: var(--font-title);
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.18em;
@@ -706,130 +715,34 @@ ul {
 }
 
 .mosaic__grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 260px;
   gap: 4px;
   padding: 0 4vw;
-  align-items: flex-start;
 }
 
-/* Cada columna crece igual */
-.mosaic__col {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  flex: 1;
-}
-
-/* Item base */
-.mosaic__item {
+.movie-gallery__item {
   position: relative;
   overflow: hidden;
-  cursor: pointer;
+  height: 260px;
 }
 
-.mosaic__item img {
+.movie-gallery__item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.7s var(--ease), filter 0.7s var(--ease);
-  filter: brightness(0.82);
+  transition: transform 0.6s var(--ease), filter 0.6s var(--ease);
+  filter: brightness(0.85);
 }
 
-/* Altura base y tall */
-.mosaic__item {
-  height: 260px;
-}
-
-.mosaic__item--tall {
-  height: 380px;
-}
-
-/* Zoom hover */
-.mosaic__item:hover img {
-  transform: scale(1.06);
+.movie-gallery__item:hover img {
+  transform: scale(1.05);
   filter: brightness(1);
 }
 
-/* El item ahora es un <a>, quitamos estilos de link */
-a.mosaic__item {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
 
-/* Caption – nombre abajo a la izquierda */
-.mosaic__caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.72);
-  color: var(--color-off-white);
-  font-family: var(--font-body);
-  font-size: 0.62rem;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  padding: 0.45rem 0.75rem;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.35s var(--ease), transform 0.35s var(--ease);
-  pointer-events: none;
-}
-
-.mosaic__item:hover .mosaic__caption {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-/* ============================================================
-   RESPONSIVE – MOSAICO
-   ============================================================ */
-
-/* Tablet: 2 columnas */
-@media (max-width: 1024px) {
-  .mosaic__grid {
-    flex-wrap: wrap;
-  }
-
-  .mosaic__col {
-    flex: 1 1 calc(50% - 4px);
-  }
-
-  .mosaic__item {
-    height: 220px;
-  }
-
-  .mosaic__item--tall {
-    height: 320px;
-  }
-}
-
-/* Mobile: 2 columnas más chicas */
-@media (max-width: 768px) {
-  .mosaic__grid {
-    padding: 0 4vw;
-    gap: 3px;
-  }
-
-  .mosaic__col {
-    flex: 1 1 calc(50% - 3px);
-  }
-
-  .mosaic__item {
-    height: 160px;
-  }
-
-  .mosaic__item--tall {
-    height: 240px;
-  }
-
-  .mosaic__caption {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* ============================================================
    7. ANIMACIONES DE ENTRADA (scroll reveal)

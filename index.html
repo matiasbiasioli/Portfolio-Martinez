@@ -143,6 +143,7 @@
       <!-- Logo centro -->
       <div class="nav__logo">
         <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
+        <p class="nav__subtitle" data-i18n="nav.subtitle">Dirección de Arte</p>
       </div>
 
       <!-- Redes + idioma derecha -->
@@ -155,14 +156,6 @@
             aria-label="Instagram"
           >
             <i class="fab fa-instagram"></i>
-          </a>
-          <a
-            href="https://www.facebook.com/USUARIO"
-            target="_blank"
-            rel="noopener"
-            aria-label="Facebook"
-          >
-            <i class="fab fa-facebook-f"></i>
           </a>
           <a
             href="https://www.youtube.com/@USUARIO"
@@ -207,12 +200,6 @@
             target="_blank"
             aria-label="Instagram"
             ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/USUARIO"
-            target="_blank"
-            aria-label="Facebook"
-            ><i class="fab fa-facebook-f"></i
           ></a>
           <a
             href="https://www.youtube.com/@USUARIO"
@@ -307,132 +294,19 @@
       </div>
     </section>
 
-    <!-- ========== MOSAICO DE ESCENAS ========== -->
-    <!-- ========== GALERÍA DE PROYECTOS ========== -->
-    <section class="mosaic" id="gallery">
-      <div class="section-header">
-        <h2 class="section-title" data-i18n="mosaic.title">
-          Fotografía de Escenas
-        </h2>
-        <div class="section-line"></div>
-      </div>
+    <!-- ========== GALERÍA DE ESCENAS ========== -->
+<section class="mosaic" id="gallery">
 
-      <div class="mosaic__grid">
-        <!-- Columna 1 -->
-        <div class="mosaic__col">
-          <a
-            href="moviesDetails.html?id=1"
-            class="mosaic__item mosaic__item--tall"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80"
-              alt="Escena película 1"
-              loading="lazy"
-            />
-            <div class="mosaic__caption">Título de Película</div>
-          </a>
+  <div class="section-header">
+    <h2 class="section-title" data-i18n="mosaic.title">Fotografía de Escenas</h2>
+    <div class="section-line"></div>
+  </div>
 
-          <a href="moviesDetails.html?id=2" class="mosaic__item">
-            <img
-              src="https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=800&q=80"
-              alt="Escena película 2"
-              loading="lazy"
-            />
-            <div class="mosaic__caption">Título de Película</div>
-          </a>
-        </div>
+  <div class="mosaic__grid" id="homeMosaicGrid">
+    <!-- Se rellena dinámicamente desde movies.json -->
+  </div>
 
-        <!-- Columna 2 -->
-        <div class="mosaic__col">
-          <a href="moviesDetails.html?id=3" class="mosaic__item">
-            <img
-              src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80"
-              alt="Escena película 3"
-              loading="lazy"
-            />
-            <div class="mosaic__caption">Título de Película</div>
-          </a>
-
-          <a href="moviesDetails.html?id=4" class="mosaic__item">
-            <img
-              src="https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?w=800&q=80"
-              alt="Escena película 4"
-              loading="lazy"
-            />
-            <div class="mosaic__caption">Título de Película</div>
-          </a>
-
-          <a
-            href="moviesDetails.html?id=5"
-            class="mosaic__item mosaic__item--tall"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1500210600724-bf2c61ec56dc?w=800&q=80"
-              alt="Escena película 5"
-              loading="lazy"
-            />
-            <div class="mosaic__caption">Título de Película</div>
-          </a>
-        </div>
-
-        <!-- Columna 3 -->
-        <div class="mosaic__col">
-          <a
-            href="moviesDetails.html?id=6"
-            class="mosaic__item mosaic__item--tall"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80"
-              alt="Escena película 6"
-              loading="lazy"
-            />
-            <div class="mosaic__caption">Título de Película</div>
-          </a>
-
-          <a href="moviesDetails.html?id=7" class="mosaic__item">
-            <img
-              src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80"
-              alt="Escena película 7"
-              loading="lazy"
-            />
-            <div class="mosaic__caption">Título de Película</div>
-          </a>
-        </div>
-
-        <!-- Columna 4 -->
-        <div class="mosaic__col">
-          <a href="moviesDetails.html?id=8" class="mosaic__item">
-            <img
-              src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80"
-              alt="Escena película 8"
-              loading="lazy"
-            />
-            <div class="mosaic__caption">Título de Película</div>
-          </a>
-
-          <a
-            href="moviesDetails.html?id=9"
-            class="mosaic__item mosaic__item--tall"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&q=80"
-              alt="Escena película 9"
-              loading="lazy"
-            />
-            <div class="mosaic__caption">Título de Película</div>
-          </a>
-
-          <a href="moviesDetails.html?id=10" class="mosaic__item">
-            <img
-              src="https://images.unsplash.com/photo-1560109947-543149eceb16?w=800&q=80"
-              alt="Escena película 10"
-              loading="lazy"
-            />
-            <div class="mosaic__caption">Título de Película</div>
-          </a>
-        </div>
-      </div>
-    </section>
+</section>
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
       <div class="footer__main">
