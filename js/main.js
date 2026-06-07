@@ -153,7 +153,7 @@ const translations = {
     'nav.bio': 'Biografía',
     'nav.contact': 'Contacto',
 
-    'hero.label': 'Director de Arte',
+    'hero.label': 'Dirección de Arte',
     'hero.tagline': 'Cine · Series · Publicidad',
     'hero.scroll': 'Scroll',
 
@@ -170,12 +170,32 @@ const translations = {
     'movie.wip': 'Work in Progress',
     'movie.back': 'Volver a proyectos',
     'movie.expand': 'Ver en pantalla completa',
-    
+
     'filter.all': 'Todo',
     'filter.films': 'Películas',
     'filter.series': 'Series',
     'filter.other': 'Otros proyectos',
     'nav.subtitle': 'Dirección de Arte',
+
+    'bio.label': 'Sobre mí',
+    'bio.title': 'Biografía',
+    'bio.p1': 'Mi interés por el dibujo y la arquitectura se remontan a mi infancia, en la que pasaba horas dibujando y ambientando espacios inventados. La pasión por el cine se despertó durante la filmación de un cortometraje realizado con amigos en mi adolescencia. Desde ese momento supe que era eso a lo que quería dedicarme.',
+    'bio.p2': 'Desde el año 2000 he realizado la Ambientación y la Escenografía de películas de Juan José Campanella, Fernando Meirelles, Lucía Puenzo, Pablo Trapero, Luis Ortega, Daniele Luchetti, entre otros.',
+    'bio.p3': 'Como Director de Arte, he colaborado con directores como Lucía Puenzo, German Kral, Pablo Solarz, Fernando Salem, Pablo Trapero, Nicolás Puenzo, Sergio Bizzio, Pablo Fendrick, Ricardo Diaz Iacoponi y Alejandro Montiel.',
+    'bio.p4': 'Entre mis trabajos fuera de los sets de filmación, se destaca la Dirección de Arte del Desfile del Bicentenario de la República Argentina, un espectáculo presenciado en vivo por dos millones de personas.',
+    'bio.p5': 'La posibilidad de crear el universo visual de cada proyecto y cada personaje es lo que más me apasiona de mi profesión. Sumergirme en mundos nuevos y desconocidos para poder construir una imagen es el sueño que me acompaña desde que era pequeño.',
+    'bio.cta': 'Contactame',
+
+    'contact.title': 'Contacto',
+    'contact.email': 'Email',
+    'contact.location': 'Ubicación',
+    'contact.social': 'Redes',
+    'contact.name': 'Nombre',
+    'contact.emailField': 'Email',
+    'contact.subject': 'Asunto',
+    'contact.message': 'Mensaje',
+    'contact.send': 'Enviar mensaje',
+    'contact.success': '¡Mensaje enviado! Me pondré en contacto pronto.',
 
   },
   en: {
@@ -184,7 +204,7 @@ const translations = {
     'nav.bio': 'Biography',
     'nav.contact': 'Contact',
 
-    'hero.label': 'Art Director',
+    'hero.label': 'Production Designer',
     'hero.tagline': 'Film · Series · Commercials',
     'hero.scroll': 'Scroll',
 
@@ -202,12 +222,32 @@ const translations = {
     'movie.wip': 'Work in Progress',
     'movie.back': 'Back to projects',
     'movie.expand': 'Full screen',
-    
+
     'filter.all': 'All',
     'filter.films': 'Films',
     'filter.series': 'TV Series',
     'filter.other': 'Other Projects',
-    'nav.subtitle': 'Production Designer'
+    'nav.subtitle': 'Production Designer',
+
+    'bio.label': 'About me',
+    'bio.title': 'Biography',
+    'bio.p1': "My love for drawing and arquitecture goes back to my childhood, when I could spend hours sketching and decorating imaginary rooms. I became interested in working with motion pictures as a teenage boy during the shoot of a short film with friends. Ever since I’ve known that I wanted to dedicate my working hours to production design.",
+    'bio.p2': "From 2000 onwards, I worked as a Set Decorator and as an Art Director in films by Juan José Campanella, Fernando Meirelles, Lucía Puenzo, Pablo Trapero, Luis Ortega, Daniele Luchetti , and several others.",
+    'bio.p3': "As a Production Designer, I’ve collaborated with directors such as Lucía Puenzo, German Kral, Pablo Solarz, Fernando Salem, Pablo Trapero, Nicolás Puenzo, Sergio Bizzio, Pablo Fendrick and Ricardo Diaz Iacoponi.",
+    'bio.p4': "My work outside film sets includes the Art Direction of Argentina´s Bicentennial Parade, a show with to million people in attendance.The possibility to create visual landscapes for each proyect and worlds for every character is what drives me professionally.",
+    'bio.p5': "Diving into new and uncharted universes to materialize a unique vision is the dream that keeps me going since I was a young boy.",
+    'bio.cta': 'Contact me',
+
+    'contact.title': 'Contact',
+    'contact.email': 'Email',
+    'contact.location': 'Location',
+    'contact.social': 'Social',
+    'contact.name': 'Name',
+    'contact.emailField': 'Email',
+    'contact.subject': 'Subject',
+    'contact.message': 'Message',
+    'contact.send': 'Send message',
+    'contact.success': 'Message sent! I will get back to you soon.'
   }
 };
 

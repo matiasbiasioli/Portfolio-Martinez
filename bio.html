@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Biografía de Matías Martinez – Director de Arte." />
+  <title>Biografía – Matías Martinez</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/bio.css" />
+</head>
+
+<body class="page-bio">
+
+  <!-- ========== NAVEGACIÓN ========== -->
+  <header class="nav scrolled" id="navbar">
+    <div class="nav__logo">
+      <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
+      <p class="nav__subtitle" data-i18n="nav.subtitle">Dirección de Arte</p>
+    </div>
+
+    <nav class="nav__links">
+      <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
+      <a href="bio.html" class="active" data-i18n="nav.bio">Biografía</a>
+      <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <div class="nav__actions">
+      <div class="nav__socials">
+        <a href="https://www.instagram.com/USUARIO" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@USUARIO" target="_blank" rel="noopener" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.imdb.com/name/USUARIO/" target="_blank" rel="noopener" aria-label="IMDB">
+          <i class="fab fa-imdb"></i>
+        </a>
+      </div>
+
+      <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+        <span class="lang-toggle__option active" data-lang="es">ES</span>
+        <span class="lang-toggle__divider">/</span>
+        <span class="lang-toggle__option" data-lang="en">EN</span>
+      </button>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
+      <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+      <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+      <div class="nav__mobile-socials">
+        <a href="https://www.instagram.com/USUARIO" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@USUARIO" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.imdb.com/name/USUARIO/" target="_blank" aria-label="IMDB"><i class="fab fa-imdb"></i></a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========== BIO SPLIT ========== -->
+  <section class="bio">
+
+    <!-- Columna izquierda: Texto -->
+    <div class="bio__text">
+
+      <div class="bio__header">
+        <p class="bio__label" data-i18n="bio.label">Sobre mí</p>
+        <h1 class="bio__title" data-i18n="bio.title">Biografía</h1>
+        <div class="bio__line"></div>
+      </div>
+
+      <div class="bio__content">
+        <p data-i18n="bio.p1">Mi interés por el dibujo y la arquitectura se remontan a mi infancia, en la que pasaba horas dibujando y ambientando espacios inventados. La pasión por el cine se despertó durante la filmación de un cortometraje realizado con amigos en mi adolescencia. Desde ese momento supe que era eso a lo que quería dedicarme.</p>
+
+        <p data-i18n="bio.p2">Desde el año 2000 he realizado la Ambientación y la Escenografía de películas de Juan José Campanella, Fernando Meirelles, Lucía Puenzo, Pablo Trapero, Luis Ortega, Daniele Luchetti, entre otros.</p>
+
+        <p data-i18n="bio.p3">Como Director de Arte, he colaborado con directores como Lucía Puenzo, German Kral, Pablo Solarz, Fernando Salem, Pablo Trapero, Nicolás Puenzo, Sergio Bizzio, Pablo Fendrick, Ricardo Diaz Iacoponi y Alejandro Montiel.</p>
+
+        <p data-i18n="bio.p4">Entre mis trabajos fuera de los sets de filmación, se destaca la Dirección de Arte del Desfile del Bicentenario de la República Argentina, un espectáculo presenciado en vivo por dos millones de personas.</p>
+
+        <p data-i18n="bio.p5">La posibilidad de crear el universo visual de cada proyecto y cada personaje es lo que más me apasiona de mi profesión. Sumergirme en mundos nuevos y desconocidos para poder construir una imagen es el sueño que me acompaña desde que era pequeño.</p>
+      </div>
+
+      <div class="bio__footer">
+        <a href="contact.html" class="btn-outline" data-i18n="bio.cta">Contactame</a>
+      </div>
+
+    </div>
+
+    <!-- Columna derecha: Foto -->
+    <div class="bio__photo">
+      <img src="./images/IMG_1820.jpg" alt="Matías Martinez" />
+    </div>
+
+  </section>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__name">Matías Martinez</a>
+        <p class="footer__role" data-i18n="hero.label">Director de Arte</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
+        <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+        <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <div class="footer__socials">
+        <a href="https://www.instagram.com/USUARIO" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@USUARIO" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.imdb.com/name/USUARIO/" target="_blank" rel="noopener" aria-label="IMDB"><i class="fab fa-imdb"></i></a>
+      </div>
+    </div>
+    <div class="footer__divider"></div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© <span id="footerYear"></span> Matías Martinez · Todos los derechos reservados</p>
+      <p class="footer__credit">Design by <a href="https://www.saviadigital.com.ar" target="_blank" rel="noopener">Savia Digital</a></p>
+    </div>
+  </footer>
+
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="js/main.js"></script>
+  <script src="js/bio.js"></script>
+
+</body>
+</html>

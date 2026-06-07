@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contacto – Matías Martinez Director de Arte." />
+  <title>Contacto – Matías Martinez</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+
+<body class="page-contact">
+
+  <!-- ========== NAVEGACIÓN ========== -->
+  <header class="nav scrolled" id="navbar">
+    <div class="nav__logo">
+      <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
+      <p class="nav__subtitle" data-i18n="nav.subtitle">Dirección de Arte</p>
+    </div>
+
+    <nav class="nav__links">
+      <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
+      <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+      <a href="contact.html" class="active" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <div class="nav__actions">
+      <div class="nav__socials">
+        <a href="https://www.instagram.com/USUARIO" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@USUARIO" target="_blank" rel="noopener" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.imdb.com/name/USUARIO/" target="_blank" rel="noopener" aria-label="IMDB">
+          <i class="fab fa-imdb"></i>
+        </a>
+      </div>
+
+      <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+        <span class="lang-toggle__option active" data-lang="es">ES</span>
+        <span class="lang-toggle__divider">/</span>
+        <span class="lang-toggle__option" data-lang="en">EN</span>
+      </button>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
+      <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+      <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+      <div class="nav__mobile-socials">
+        <a href="https://www.instagram.com/USUARIO" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@USUARIO" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.imdb.com/name/USUARIO/" target="_blank" aria-label="IMDB"><i class="fab fa-imdb"></i></a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========== CONTACTO ========== -->
+  <section class="contact">
+
+    <!-- Header -->
+    <div class="contact__header">
+      <h1 class="contact__title" data-i18n="contact.title">Contacto</h1>
+      <div class="contact__line"></div>
+    </div>
+
+    <!-- Info + Redes -->
+    <div class="contact__info">
+
+      <div class="contact__info-col">
+        <div class="contact__item">
+          <span class="contact__item-label" data-i18n="contact.email">Email</span>
+          <a href="mailto:matias@example.com" class="contact__item-value">matias@example.com</a>
+        </div>
+        <div class="contact__item">
+          <span class="contact__item-label" data-i18n="contact.location">Ubicación</span>
+          <span class="contact__item-value">Buenos Aires, Argentina</span>
+        </div>
+      </div>
+
+      <div class="contact__info-col">
+        <span class="contact__item-label" data-i18n="contact.social">Redes</span>
+        <div class="contact__socials">
+          <a href="https://www.instagram.com/USUARIO" target="_blank" rel="noopener">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.youtube.com/@USUARIO" target="_blank" rel="noopener">
+            <i class="fab fa-youtube"></i>
+            <span>YouTube</span>
+          </a>
+          <a href="https://www.imdb.com/name/USUARIO/" target="_blank" rel="noopener">
+            <i class="fab fa-imdb"></i>
+            <span>IMDB</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="contact__divider"></div>
+
+    <!-- Formulario -->
+    <div class="contact__form-wrap">
+      <div class="contact__form">
+
+        <div class="contact__form-row">
+          <div class="contact__field">
+            <label for="nombre" data-i18n="contact.name">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="off" />
+          </div>
+          <div class="contact__field">
+            <label for="email" data-i18n="contact.emailField">Email</label>
+            <input type="email" id="email" name="email" autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="contact__field">
+          <label for="asunto" data-i18n="contact.subject">Asunto</label>
+          <input type="text" id="asunto" name="asunto" autocomplete="off" />
+        </div>
+
+        <div class="contact__field">
+          <label for="mensaje" data-i18n="contact.message">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+        </div>
+
+        <button class="contact__submit" id="contactSubmit" type="button">
+          <span data-i18n="contact.send">Enviar mensaje</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+
+        <!-- Mensaje de éxito -->
+        <p class="contact__success" id="contactSuccess" data-i18n="contact.success">
+          ¡Mensaje enviado! Me pondré en contacto pronto.
+        </p>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__name">Matías Martinez</a>
+        <p class="footer__role" data-i18n="hero.label">Director de Arte</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
+        <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+        <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <div class="footer__socials">
+        <a href="https://www.instagram.com/USUARIO" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@USUARIO" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.imdb.com/name/USUARIO/" target="_blank" rel="noopener" aria-label="IMDB"><i class="fab fa-imdb"></i></a>
+      </div>
+    </div>
+    <div class="footer__divider"></div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© <span id="footerYear"></span> Matías Martinez · Todos los derechos reservados</p>
+      <p class="footer__credit">Design by <a href="https://www.saviadigital.com.ar" target="_blank" rel="noopener">Savia Digital</a></p>
+    </div>
+  </footer>
+
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* ============================================================
+   BIO PAGE
+   css/bio.css
+   ============================================================ */
+
+
+/* ============================================================
+   1. LAYOUT SPLIT
+   ============================================================ */
+
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  margin-top: var(--nav-height);
+}
+
+
+/* ============================================================
+   2. COLUMNA IZQUIERDA – TEXTO
+   ============================================================ */
+
+.bio__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 6vw 6rem 6vw;
+  background: var(--color-bg);
+}
+
+.bio__header {
+  margin-bottom: 3rem;
+}
+
+.bio__label {
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.bio__title {
+  font-family: var(--font-title);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+
+.bio__line {
+  width: 40px;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+
+/* ============================================================
+   3. TEXTO BIO
+   ============================================================ */
+
+.bio__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.bio__content p {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--color-off-white);
+  letter-spacing: 0.02em;
+}
+
+
+/* ============================================================
+   4. BOTÓN CONTACTO
+   ============================================================ */
+
+.bio__footer {
+  margin-top: 1rem;
+}
+
+
+/* ============================================================
+   5. COLUMNA DERECHA – FOTO
+   ============================================================ */
+
+.bio__photo {
+  position: sticky;
+  top: var(--nav-height);
+  height: calc(100vh - var(--nav-height));
+  overflow: hidden;
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio__photo img {
+  width: 380px;
+  height: 480px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.6s var(--ease);
+}
+
+.bio__photo img:hover {
+  filter: grayscale(0%);
+}
+
+
+/* ============================================================
+   6. RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1024px) {
+  .bio {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bio__text {
+    padding: 5rem 4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .bio {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  /* En mobile la foto va arriba */
+  .bio__photo {
+    position: relative;
+    top: 0;
+    height: 60vh;
+    order: -1;
+  }
+
+  .bio__text {
+    padding: 4rem 6vw;
+  }
+
+  .bio__content p {
+    font-size: 1rem;
+  }
+}

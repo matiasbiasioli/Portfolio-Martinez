@@ -1,0 +1,303 @@
+/* ============================================================
+   CONTACT PAGE
+   css/contact.css
+   ============================================================ */
+
+
+/* ============================================================
+   1. SECCIÓN PRINCIPAL
+   ============================================================ */
+
+.contact {
+  min-height: 100vh;
+  padding: calc(var(--nav-height) + 5rem) 8vw 8rem;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+
+/* ============================================================
+   2. HEADER
+   ============================================================ */
+
+.contact__header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact__label {
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.contact__title {
+  font-family: var(--font-title);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+
+.contact__line {
+  width: 40px;
+  height: 1px;
+  background: var(--color-accent);
+  margin: 0 auto 2rem;
+}
+
+.contact__intro {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-muted);
+  letter-spacing: 0.02em;
+}
+
+
+/* ============================================================
+   3. INFO + REDES
+   ============================================================ */
+
+.contact__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact__info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact__item-label {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.contact__item-value {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--color-off-white);
+  transition: color 0.3s var(--ease);
+}
+
+a.contact__item-value:hover {
+  color: var(--color-accent);
+}
+
+/* Redes */
+.contact__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.contact__socials a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-muted);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: color 0.3s var(--ease), gap 0.3s var(--ease);
+}
+
+.contact__socials a i {
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+}
+
+.contact__socials a:hover {
+  color: var(--color-white);
+  gap: 1.3rem;
+}
+
+
+/* ============================================================
+   4. DIVIDER
+   ============================================================ */
+
+.contact__divider {
+  height: 1px;
+  background: var(--color-border);
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+/* ============================================================
+   5. FORMULARIO
+   ============================================================ */
+
+.contact__form-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.contact__form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact__field label {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  transition: color 0.3s var(--ease);
+}
+
+.contact__field:focus-within label {
+  color: var(--color-accent);
+}
+
+.contact__field input,
+.contact__field textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.8rem 0;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-off-white);
+  outline: none;
+  transition: border-color 0.3s var(--ease);
+  resize: none;
+  width: 100%;
+}
+
+.contact__field input:hover,
+.contact__field textarea:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact__field input:focus,
+.contact__field textarea:focus {
+  border-bottom-color: var(--color-accent);
+}
+
+.contact__field input::placeholder,
+.contact__field textarea::placeholder {
+  color: transparent;
+}
+
+/* Botón enviar */
+.contact__submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  align-self: flex-start;
+  padding: 1rem 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-off-white);
+  transition: background 0.3s var(--ease), color 0.3s var(--ease), border-color 0.3s var(--ease), gap 0.3s var(--ease);
+  cursor: pointer;
+}
+
+.contact__submit:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: var(--color-white);
+  gap: 1.4rem;
+}
+
+.contact__submit i {
+  font-size: 0.7rem;
+  transition: transform 0.3s var(--ease);
+}
+
+.contact__submit:hover i {
+  transform: translateX(3px);
+}
+
+/* Mensaje de éxito */
+.contact__success {
+  display: none;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-top: 0.5rem;
+}
+
+.contact__success.visible {
+  display: block;
+}
+
+
+/* ============================================================
+   6. RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .contact {
+    padding: calc(var(--nav-height) + 3rem) 6vw 6rem;
+    gap: 3rem;
+  }
+
+  .contact__info {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact__form-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact__submit {
+    width: 100%;
+    justify-content: center;
+  }
+}
