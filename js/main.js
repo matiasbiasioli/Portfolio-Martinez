@@ -194,7 +194,7 @@ const translations = {
     'contact.emailField': 'Email',
     'contact.subject': 'Asunto',
     'contact.message': 'Mensaje',
-    'contact.send': 'Enviar mensaje',
+    'contact.send': 'Enviar',
     'contact.success': '¡Mensaje enviado! Me pondré en contacto pronto.',
 
   },
@@ -246,7 +246,7 @@ const translations = {
     'contact.emailField': 'Email',
     'contact.subject': 'Subject',
     'contact.message': 'Message',
-    'contact.send': 'Send message',
+    'contact.send': 'Send',
     'contact.success': 'Message sent! I will get back to you soon.'
   }
 };
