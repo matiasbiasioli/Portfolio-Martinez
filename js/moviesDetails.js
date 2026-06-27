@@ -9,7 +9,7 @@
    ============================================================ */
 
 async function loadMovie() {
-    console.log('loadMovie ejecutado');
+  console.log('loadMovie ejecutado');
   // Lee el ?id= de la URL
   const params = new URLSearchParams(window.location.search);
   const id = parseInt(params.get('id'));
@@ -25,7 +25,7 @@ async function loadMovie() {
     const response = await fetch('data/movies.json');
     const movies = await response.json();
     console.log('películas cargadas:', movies);
-console.log('buscando id:', id);
+    console.log('buscando id:', id);
 
     // Busca la película por id
     const movie = movies.find(m => m.id === id);
@@ -75,8 +75,51 @@ function renderMovie(movie) {
   const añoEl = document.getElementById('movieAño');
   if (añoEl) añoEl.textContent = movie.año;
 
-  const rolEl = document.getElementById('movieRol');
-  if (rolEl) rolEl.textContent = movie.rol;
+
+  // Diseñador de Producción
+  const disenEl = document.getElementById('movieDisenador');
+  const rowDisen = document.getElementById('rowDisenador');
+  if (disenEl && movie.disenador_produccion) {
+    disenEl.textContent = movie.disenador_produccion;
+  } else if (rowDisen) {
+    rowDisen.style.display = 'none';
+  }
+
+  // Director de Arte
+  const dirArteEl = document.getElementById('movieDirectorArte');
+  const rowDirArte = document.getElementById('rowDirectorArte');
+  if (dirArteEl && movie.director_de_arte) {
+    dirArteEl.textContent = movie.director_de_arte;
+  } else if (rowDirArte) {
+    rowDirArte.style.display = 'none';
+  }
+
+  // Ambientador
+  const ambEl = document.getElementById('movieAmbientador');
+  const rowAmb = document.getElementById('rowAmbientador');
+  if (ambEl && movie.ambientador) {
+    ambEl.textContent = movie.ambientador;
+  } else if (rowAmb) {
+    rowAmb.style.display = 'none';
+  }
+
+  // Fotografía
+  const fotoEl = document.getElementById('movieFotografia');
+  const rowFoto = document.getElementById('rowFotografia');
+  if (fotoEl && movie.fotografia) {
+    fotoEl.textContent = movie.fotografia;
+  } else if (rowFoto) {
+    rowFoto.style.display = 'none';
+  }
+
+  // Productora
+  const prodEl = document.getElementById('movieProductora');
+  const rowProd = document.getElementById('rowProductora');
+  if (prodEl && movie.productora) {
+    prodEl.textContent = movie.productora;
+  } else if (rowProd) {
+    rowProd.style.display = 'none';
+  }
 
   // Trailer
   const trailerEl = document.getElementById('movieTrailer');
@@ -170,8 +213,8 @@ function renderWip(wip) {
    5. LIGHTBOX
    ============================================================ */
 
-const lightbox     = document.getElementById('lightbox');
-const lightboxImg  = document.getElementById('lightboxImg');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
 const lightboxClose = document.getElementById('lightboxClose');
 const lightboxPrev = document.getElementById('lightboxPrev');
 const lightboxNext = document.getElementById('lightboxNext');
@@ -214,9 +257,9 @@ if (lightboxNext) lightboxNext.addEventListener('click', nextImage);
 // Navegación con teclado
 document.addEventListener('keydown', (e) => {
   if (!lightbox.classList.contains('open')) return;
-  if (e.key === 'ArrowLeft')  prevImage();
+  if (e.key === 'ArrowLeft') prevImage();
   if (e.key === 'ArrowRight') nextImage();
-  if (e.key === 'Escape')     closeLightbox();
+  if (e.key === 'Escape') closeLightbox();
 });
 
 
@@ -224,9 +267,9 @@ document.addEventListener('keydown', (e) => {
    6. MODAL TRAILER
    ============================================================ */
 
-const modalTrailer  = document.getElementById('modalTrailer');
-const modalIframe   = document.getElementById('modalIframe');
-const modalClose    = document.getElementById('modalClose');
+const modalTrailer = document.getElementById('modalTrailer');
+const modalIframe = document.getElementById('modalIframe');
+const modalClose = document.getElementById('modalClose');
 const modalBackdrop = document.getElementById('modalBackdrop');
 const trailerExpand = document.getElementById('trailerExpand');
 
@@ -246,7 +289,7 @@ function closeModal() {
 }
 
 if (trailerExpand) trailerExpand.addEventListener('click', openModal);
-if (modalClose)    modalClose.addEventListener('click', closeModal);
+if (modalClose) modalClose.addEventListener('click', closeModal);
 if (modalBackdrop) modalBackdrop.addEventListener('click', closeModal);
 
 // Cierra modal con Escape

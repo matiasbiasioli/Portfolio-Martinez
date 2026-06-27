@@ -170,6 +170,11 @@ const translations = {
     'movie.wip': 'Work in Progress',
     'movie.back': 'Volver a proyectos',
     'movie.expand': 'Ver en pantalla completa',
+    'movie.productora': 'Productora',
+    'movie.fotografia': 'Fotografía',
+    'movie.disenador': 'Diseñador de Producción',
+    'movie.directorArte': 'Director de Arte',
+    'movie.ambientador': 'Ambientador',
 
     'filter.all': 'Todo',
     'filter.films': 'Películas',
@@ -213,8 +218,12 @@ const translations = {
     'projects.all': 'View all projects',
 
     'mosaic.title': 'Scene Photography',
-
     'movie.director': 'Director',
+    'movie.productora': 'Production Company',
+    'movie.fotografia': 'Cinematography',
+    'movie.disenador': 'Production Designer',
+    'movie.directorArte': 'Art Director',
+    'movie.ambientador': 'Set Decorator',
 
     'movie.año': 'Year',
     'movie.rol': 'Role',

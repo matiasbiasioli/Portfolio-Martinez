@@ -171,9 +171,9 @@ ul {
 }
 
 .nav__subtitle {
-  font-size: 0.55rem;
+  font-size: 0.9rem;
   font-weight: 400;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-muted);
   text-align: center;
