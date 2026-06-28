@@ -693,6 +693,26 @@ ul {
     gap: 1.2rem;
     padding: 0 6vw;
   }
+  .nav--centered .nav__logo {
+    text-align: left;
+  }
+
+  .nav--centered .nav__logo a {
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    display: block;
+  }
+
+  .nav--centered .nav__subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 0.15rem;
+    margin-top: 0.15rem;
+    display: block;
+    text-align: left;
+    width: fit-content;
+  }
 }
 
 @media (max-width: 480px) {
@@ -705,10 +725,6 @@ ul {
     font-size: 0.6rem;
   }
 }
-
-/* ============================================================
-   6. MOSAICO DE ESCENAS
-   ============================================================ */
 
 /* ============================================================
    6. MOSAICO DE ESCENAS
