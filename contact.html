@@ -81,81 +81,80 @@
       <div class="contact__line"></div>
     </div>
 
-    <!-- Info + Redes -->
-    <div class="contact__info">
+        <!-- Body: dos columnas -->
+    <div class="contact__body">
 
-      <div class="contact__info-col">
+      <!-- Columna izquierda: formulario -->
+      <div class="contact__form-wrap">
+        <div class="contact__form">
+
+          <div class="contact__form-row">
+            <div class="contact__field">
+              <label for="nombre" data-i18n="contact.name">Nombre</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="off" />
+            </div>
+            <div class="contact__field">
+              <label for="email" data-i18n="contact.emailField">Email</label>
+              <input type="email" id="email" name="email" autocomplete="off" />
+            </div>
+          </div>
+
+          <div class="contact__field">
+            <label for="asunto" data-i18n="contact.subject">Asunto</label>
+            <input type="text" id="asunto" name="asunto" autocomplete="off" />
+          </div>
+
+          <div class="contact__field">
+            <label for="mensaje" data-i18n="contact.message">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6"></textarea>
+          </div>
+
+          <button class="contact__submit" id="contactSubmit" type="button">
+            <span data-i18n="contact.send">Enviar</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+
+          <p class="contact__success" id="contactSuccess" data-i18n="contact.success">
+            ¡Mensaje enviado! Me pondré en contacto pronto.
+          </p>
+
+        </div>
+      </div>
+
+      <!-- Columna derecha: info + redes -->
+      <div class="contact__sidebar">
+
         <div class="contact__item">
           <span class="contact__item-label" data-i18n="contact.email">Email</span>
           <a href="mailto:matias@example.com" class="contact__item-value">matiasmartinez@gmail.com</a>
         </div>
+
         <div class="contact__item">
           <span class="contact__item-label" data-i18n="contact.location">Ubicación</span>
           <span class="contact__item-value">Buenos Aires, Argentina</span>
         </div>
-      </div>
 
-      <div class="contact__info-col">
-        <span class="contact__item-label" data-i18n="contact.social">Redes</span>
-        <div class="contact__socials">
-          <a href="https://www.instagram.com/USUARIO" target="_blank" rel="noopener">
-            <i class="fab fa-instagram"></i>
-            <span>Instagram</span>
-          </a>
-          <a href="https://www.youtube.com/@USUARIO" target="_blank" rel="noopener">
-            <i class="fab fa-youtube"></i>
-            <span>YouTube</span>
-          </a>
-          <a href="https://www.imdb.com/name/USUARIO/" target="_blank" rel="noopener">
-            <i class="fab fa-imdb"></i>
-            <span>IMDB</span>
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Divider -->
-    <div class="contact__divider"></div>
-
-    <!-- Formulario -->
-    <div class="contact__form-wrap">
-      <div class="contact__form">
-
-        <div class="contact__form-row">
-          <div class="contact__field">
-            <label for="nombre" data-i18n="contact.name">Nombre</label>
-            <input type="text" id="nombre" name="nombre" autocomplete="off" />
-          </div>
-          <div class="contact__field">
-            <label for="email" data-i18n="contact.emailField">Email</label>
-            <input type="email" id="email" name="email" autocomplete="off" />
+        <div class="contact__item">
+          <span class="contact__item-label" data-i18n="contact.social">Redes</span>
+          <div class="contact__socials">
+            <a href="https://www.instagram.com/matiasmartinez.art" target="_blank" rel="noopener">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="https://www.youtube.com/channel/UC0AMCL37FFdLFo84y6AwCCQ" target="_blank" rel="noopener">
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+            <a href="https://www.imdb.com/es/name/nm1031163/?ref_=nv_sr_srsg_0" target="_blank" rel="noopener">
+              <i class="fab fa-imdb"></i>
+              <span>IMDB</span>
+            </a>
           </div>
         </div>
 
-        <div class="contact__field">
-          <label for="asunto" data-i18n="contact.subject">Asunto</label>
-          <input type="text" id="asunto" name="asunto" autocomplete="off" />
-        </div>
-
-        <div class="contact__field">
-          <label for="mensaje" data-i18n="contact.message">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-        </div>
-
-        <button class="contact__submit" id="contactSubmit" type="button">
-          <span data-i18n="contact.send">Enviar</span>
-          <i class="fas fa-arrow-right"></i>
-        </button>
-
-        <!-- Mensaje de éxito -->
-        <p class="contact__success" id="contactSuccess" data-i18n="contact.success">
-          ¡Mensaje enviado! Me pondré en contacto pronto.
-        </p>
-
       </div>
-    </div>
 
+    </div>
   </section>
 
 
