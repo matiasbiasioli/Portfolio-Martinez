@@ -32,7 +32,7 @@
     "año": "2023",
     "trailer": "https://www.youtube.com/embed/nwERTGPQPA8",
     "poster": "./images/posters/adios-buenos-aires.jpg",
-    "imagen_hero": "./images/posters/adios-buenos-aires.jpg",
+    "imagen_hero": "./images/portadas/portada-adios.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -51,7 +51,7 @@
     "año": "2022",
     "trailer": "https://www.youtube.com/embed/Y23WSAMdeJ8",
     "poster": "./images/posters/pipa.jpg",
-    "imagen_hero": "./images/posters/pipa.jpg",
+    "imagen_hero": "./images/portadas/portada-pipa.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -88,7 +88,7 @@
     "año": "2022",
     "trailer": "https://www.youtube.com/embed/yw4w4DXN6XE",
     "poster": "./images/posters/cromo.jpg",
-    "imagen_hero": "./images/posters/cromo.jpg",
+    "imagen_hero": "./images/portadas/portada-cromo.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -106,7 +106,7 @@
     "año": "2018",
     "trailer": "https://www.youtube.com/embed/m_Bkr6FKbhg",
     "poster": "./images/posters/el-amor-menos-pensado.jpg",
-    "imagen_hero": "./images/posters/el-amor-menos-pensado.jpg",
+    "imagen_hero": "./images/portadas/portada-amormenospensado.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -124,7 +124,7 @@
     "año": "2005",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
     "poster": "./images/posters/el-aura.jpg",
-    "imagen_hero": "./images/posters/el-aura.jpg",
+    "imagen_hero": "./images/portadas/portada-aura.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -142,7 +142,7 @@
     "año": "2017",
     "trailer": "https://www.youtube.com/embed/-paquLyGxxY",
     "poster": "./images/posters/el-futbol-o-yo.jpg",
-    "imagen_hero": "./images/posters/el-futbol-o-yo.jpg",
+    "imagen_hero": "./images/portadas/portada-futboloyo.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -160,7 +160,7 @@
     "año": "2009",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
     "poster": "./images/posters/el-niño-pez.jpg",
-    "imagen_hero": "./images/posters/el-niño-pez.jpg",
+    "imagen_hero": "./images/portadas/portada-niñopez.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -178,7 +178,7 @@
     "año": "2019",
     "trailer": "https://www.youtube.com/embed/4nxHZkAJN-k",
     "poster": "./images/posters/el-retiro.avif",
-    "imagen_hero": "./images/posters/el-retiro.avif",
+    "imagen_hero": "./images/portadas/portada-retiro.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -196,7 +196,7 @@
     "año": "2017",
     "trailer": "https://www.youtube.com/embed/DJ1Rhvr99rE",
     "poster": "./images/posters/el-ultimo-traje.jpg",
-    "imagen_hero": "./images/posters/el-ultimo-traje.jpg",
+    "imagen_hero": "./images/portadas/portada-ultimotraje.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -214,7 +214,7 @@
     "año": "2011",
     "trailer": "https://www.youtube.com/embed/e37TM6L6cuY",
     "poster": "./images/posters/empieza-el-baile.jpeg",
-    "imagen_hero": "./images/posters/empieza-el-baile.jpeg",
+    "imagen_hero": "./images/portadas/portada-empiezaelbaile.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -232,7 +232,7 @@
     "año": "2020",
     "trailer": "https://www.youtube.com/embed/WiLW6hk_2XE",
     "poster": "./images/posters/la-corazonada.jpg",
-    "imagen_hero": "./images/posters/la-corazonada.jpg",
+    "imagen_hero": "./images/portada/lacorazonada.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -250,7 +250,7 @@
     "año": "2021",
     "trailer": "https://www.youtube.com/embed/sLlJzEoWM5c",
     "poster": "./images/posters/la-muerte-no-existe.avif",
-    "imagen_hero": "./images/posters/la-muerte-no-existe.avif",
+    "imagen_hero": "./images/portadas/portada-muertenoexiste.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -268,7 +268,7 @@
     "año": "2015",
     "trailer": "https://www.youtube.com/embed/2NyrMTHWT8I",
     "poster": "./images/posters/llamame-fransisco.jpg",
-    "imagen_hero": "./images/posters/llamame-fransisco.jpg",
+    "imagen_hero": "./images/portadas/portada-llamamefransisco.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -286,7 +286,7 @@
     "año": "2019",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
     "poster": "./images/posters/lluvia.webp",
-    "imagen_hero": "./images/posters/lluvia.webp",
+    "imagen_hero": "./images/portadas/portada-lluvia.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -304,7 +304,7 @@
     "año": "2017",
     "trailer": "https://www.youtube.com/embed/pFn-p7EeXpQ",
     "poster": "./images/posters/los-que-aman-odian.jpg",
-    "imagen_hero": "./images/posters/los-que-aman-odian.jpg",
+    "imagen_hero": "./images/portadas/portada-amanodian.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -322,7 +322,7 @@
     "año": "2020",
     "trailer": "https://www.youtube.com/embed/iq6WQ5xs2YY",
     "poster": "./images/posters/los-ultimos.jpg",
-    "imagen_hero": "./images/posters/los-ultimos.jpg",
+    "imagen_hero": "./images/portadas/portada-ultimos.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -340,7 +340,7 @@
     "año": "2019",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
     "poster": "./images/posters/monoblock.jpg",
-    "imagen_hero": "./images/posters/monoblock.jpg",
+    "imagen_hero": "./images/portadas/portada-monobloc.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -358,7 +358,7 @@
     "año": "2019",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
     "poster": "./images/posters/pequeña.jpg",
-    "imagen_hero": "./images/posters/pequeña.jpg",
+    "imagen_hero": "./images/portadas/portada-pequenia.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -376,7 +376,7 @@
     "año": "2019",
     "trailer": "https://www.youtube.com/embed/Lq2WkUiKHBM",
     "poster": "./images/posters/two-popes.png",
-    "imagen_hero": "./images/posters/two-popes.png",
+    "imagen_hero": "./images/portadas/portada-papa.png",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -394,7 +394,7 @@
     "año": "2015",
     "trailer": "https://www.youtube.com/embed/rxa1BbTnbJA",
     "poster": "./images/posters/un-tango-mas.avif",
-    "imagen_hero": "./images/posters/un-tango-mas.avif",
+    "imagen_hero": "./images/portadas/portada-tangomas.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -412,7 +412,7 @@
     "año": "2006",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
     "poster": "./images/posters/vientos-de-agua.jpg",
-    "imagen_hero": "./images/posters/vientos-de-agua.jpg",
+    "imagen_hero": "./images/portadas/portada-vientos.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -430,7 +430,7 @@
     "año": "2013",
     "trailer": "https://www.youtube.com/embed/pkkf4nSrVcI",
     "poster": "./images/posters/wakolda-poster.jpg",
-    "imagen_hero": "./images/posters/vientos-de-agua.jpg",
+    "imagen_hero": "./images/portadas/portada-wakolda.jpg",
     "escena_destacada": "https://images.unsplash.com/photo-1512149673953-1e251807ec7c?w=800&q=80",
     "escenas": [],
     "wip": []
@@ -538,7 +538,7 @@
     "año": "2019",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
     "poster": "./images/posters/nomade.jpg",
-    "imagen_hero": "./images/posters/",
+    "imagen_hero": "./images/portadas/portada-nomade.jpg",
     "escena_destacada": "",
     "escenas": [],
     "wip": []
