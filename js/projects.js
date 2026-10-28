@@ -25,6 +25,13 @@ async function loadProjects() {
    2. RENDERIZAR CARDS DINÁMICAMENTE
    ============================================================ */
 
+function getRol(movie) {
+  if (movie.disenador_produccion) return 'Diseñador de Producción';
+  if (movie.director_de_arte) return 'Director de Arte';
+  if (movie.ambientador) return 'Ambientador';
+  return '';
+}
+
 function renderProjects(movies) {
   const grid = document.getElementById('projectsGrid');
   if (!grid) return;
@@ -46,8 +53,7 @@ function renderProjects(movies) {
             onerror="this.style.background='#1e1e1e'; this.style.display='block';"
           />
           <div class="pcard__info">
-            <h3 class="pcard__title">${movie.titulo}</h3>
-            <p class="pcard__meta">${movie.categoria} · ${movie.año}</p>
+            <p class="pcard__meta">${getRol(movie)}</p>
           </div>
         </div>
       </a>
