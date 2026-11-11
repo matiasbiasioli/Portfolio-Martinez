@@ -156,6 +156,16 @@ ul {
   border-bottom: 1px solid var(--color-border);
 }
 
+.nav.scrolled .nav__logo a {
+  font-size: 1.2rem;
+  letter-spacing: 0.12em;
+}
+
+.nav.scrolled .nav__subtitle {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+}
+
 /* Logo / Nombre */
 .nav__logo a {
   font-family: 'Cormorant Garamond', serif;

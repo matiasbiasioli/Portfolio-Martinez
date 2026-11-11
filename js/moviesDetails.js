@@ -131,36 +131,80 @@ function renderMovie(movie) {
   window._trailerUrl = movie.trailer;
 
   // Galería de escenas
-  renderGallery(movie.escenas);
+ renderGallery(movie.galeria_escenas);
 
   // Work in Progress
-  renderWip(movie.wip);
+  renderWip(movie.galeria_wip);
   // Comienzo de Trailer
   setTimeout(initTrailerAutoplay, 500);
 }
 
+
 /* ============================================================
-   3. GALERÍA DE ESCENAS
+   3. GALERÍA DE ESCENAS Y DETECCIÓN DE IMÁGENES
    ============================================================ */
 
+// Detecta automáticamente las imágenes existentes en una carpeta
+
+async function detectarImagenes(carpeta, formato) {
+  const imagenes = [];
+
+  for (let i = 1; i <= 40; i++) {
+    const ruta = `${carpeta}/${i}.${formato}`;
+
+    const existe = await new Promise(resolve => {
+      const img = new Image();
+
+      img.onload = () => resolve(true);
+      img.onerror = () => resolve(false);
+
+      img.src = ruta;
+    });
+
+    if (existe) {
+      imagenes.push(ruta);
+    }
+  }
+
+  return imagenes;
+}
+
+
+
+// Variables del lightbox
 let galleryImages = [];
 let currentLightboxIndex = 0;
 
-function renderGallery(escenas) {
+
+// Renderizar galería de escenas
+async function renderGallery(galeria) {
   const grid = document.getElementById('movieGalleryGrid');
   const section = document.getElementById('movieGallery');
 
   if (!grid) return;
 
-  // Si no hay escenas oculta la sección
-  if (!escenas || escenas.length === 0) {
+  grid.innerHTML = '';
+
+  if (!galeria || !galeria.carpeta) {
     if (section) section.style.display = 'none';
     return;
   }
 
-  galleryImages = escenas;
+  const imagenes = await detectarImagenes(
+    `./images/scenes/${galeria.carpeta}`,
+    galeria.formato
+  );
 
-  escenas.forEach((src, index) => {
+  if (imagenes.length === 0) {
+    if (section) section.style.display = 'none';
+    return;
+  }
+
+  if (section) section.style.display = '';
+
+  galleryImages = imagenes;
+
+  imagenes.forEach((src, index) => {
     const item = document.createElement('div');
     item.className = 'movie-gallery__item reveal';
 
@@ -175,7 +219,6 @@ function renderGallery(escenas) {
     grid.appendChild(item);
   });
 
-  // Activa scroll reveal en los nuevos elementos
   initRevealObserver();
 }
 
@@ -184,17 +227,21 @@ function renderGallery(escenas) {
    4. WORK IN PROGRESS
    ============================================================ */
 
-function renderWip(wip) {
+async function renderWip(galeria) {
   const grid = document.getElementById('movieWipGrid');
 
   if (!grid) return;
 
-  // Si no hay imágenes muestra placeholder
-  if (!wip || wip.length === 0) {
-    return;
-  }
+  grid.innerHTML = '';
 
-  wip.forEach((src, index) => {
+  if (!galeria || !galeria.carpeta) return;
+
+  const imagenes = await detectarImagenes(
+    `./images/proceso/${galeria.carpeta}`,
+    galeria.formato
+  );
+
+  imagenes.forEach((src, index) => {
     const item = document.createElement('div');
     item.className = 'movie-wip__item reveal';
 
