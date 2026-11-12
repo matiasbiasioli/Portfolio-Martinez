@@ -241,7 +241,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.15em;
   color: var(--color-muted);
@@ -352,7 +352,7 @@ ul {
 
 .nav__socials a {
   color: var(--color-muted);
-  font-size: 0.85rem;
+  font-size: 1rem;
   transition:
     color 0.3s var(--ease),
     transform 0.3s var(--ease);
@@ -750,7 +750,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 260px;
-  gap: 4px;
+  gap: 20px;
   padding: 0 4vw;
 }
 

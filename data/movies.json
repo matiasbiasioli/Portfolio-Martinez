@@ -80,7 +80,7 @@
     "año": "2022",
     "trailer": "https://www.youtube.com/embed/Y23WSAMdeJ8",
     "poster": "./images/posters/pipa.jpg",
-    "imagen_hero": "./images/portadas/portada-pipa.jpg",
+    "imagen_hero": "./images/portadas/portada-pipa.png",
     "galeria_escenas": {
       "carpeta": "pipa",
       "formato": "webp"
@@ -315,7 +315,7 @@
     "año": "2011",
     "trailer": "https://www.youtube.com/embed/e37TM6L6cuY",
     "poster": "./images/posters/empieza-el-baile.jpeg",
-    "imagen_hero": "./images/portadas/portada-empiezaelbaile.jpg",
+    "imagen_hero": "./images/portadas/portada-empiezaelbaile.png",
     "galeria_escenas": {
       "carpeta": "empieza-el-baile",
       "formato": "webp"
@@ -471,7 +471,7 @@
     "año": "2020",
     "trailer": "https://www.youtube.com/embed/iq6WQ5xs2YY",
     "poster": "./images/posters/los-ultimos.jpg",
-    "imagen_hero": "./images/portadas/portada-ultimos.jpg",
+    "imagen_hero": "./images/portadas/portada-ultimos.png",
     "galeria_escenas": {
       "carpeta": "los-ultimos",
       "formato": "webp"
@@ -653,7 +653,7 @@
     "año": "2019",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
     "poster": "./images/posters/islas.png",
-    "imagen_hero": "./images/posters/",
+    "imagen_hero": "./images/portadas/portada-islas.jpg",
     "galeria_escenas": {
       "carpeta": "islas",
       "formato": "webp"
@@ -679,7 +679,7 @@
     "año": "2019",
     "trailer": "https://www.youtube.com/embed/dQw4w9WgXcQ",
     "poster": "./images/posters/viejaloca.jpg",
-    "imagen_hero": "./images/posters/",
+    "imagen_hero": "./images/portadas/portada-viejaloca.jpg",
     "galeria_escenas": {
       "carpeta": "vieja-loca",
       "formato": "webp"

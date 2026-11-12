@@ -149,7 +149,7 @@ function renderMovie(movie) {
 async function detectarImagenes(carpeta, formato) {
   const imagenes = [];
 
-  for (let i = 1; i <= 40; i++) {
+  for (let i = 1; i <= 45; i++) {
     const ruta = `${carpeta}/${i}.${formato}`;
 
     const existe = await new Promise(resolve => {

@@ -383,7 +383,7 @@ async function loadHomeMosaic() {
     const movies = await response.json();
 
     // Filtra películas que tienen escena_destacada
-    const conEscena = movies.filter(m => m.escena_destacada).slice(0, 9);
+    const conEscena = movies.filter(m => m.imagen_hero && !m.imagen_hero.endsWith('/')).slice(0, 9);
 
     conEscena.forEach(movie => {
       const item = document.createElement('a');
@@ -392,7 +392,7 @@ async function loadHomeMosaic() {
 
       item.innerHTML = `
         <img
-          src="${movie.escena_destacada}"
+          src="${movie.imagen_hero}"
           alt="${movie.titulo}"
           loading="lazy"
         />

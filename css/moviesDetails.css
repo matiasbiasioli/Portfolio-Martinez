@@ -211,7 +211,7 @@
 .movie-gallery__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 20px;
   padding: 0 4vw;
   box-sizing: border-box;
 }
