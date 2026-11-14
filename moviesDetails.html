@@ -24,6 +24,14 @@
     <link rel="stylesheet" href="css/moviesDetails.css" />
   </head>
 
+  <!-- Scroll indicator flotante -->
+<div class="scroll-indicator" id="scrollIndicator">
+  <div class="scroll-indicator__mouse">
+    <div class="scroll-indicator__wheel"></div>
+  </div>
+  <i class="fas fa-chevron-down scroll-indicator__arrow"></i>
+</div>
+
   <body class="page-movie">
     <!-- ========== NAVEGACIÓN ========== -->
     <header class="nav scrolled" id="navbar">
@@ -33,15 +41,15 @@
       </div>
 
       <nav class="nav__links">
-        <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
-        <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+        <a href="projects.html" data-i18n="nav.projects">Portfolio</a>
+        <a href="bio.html" data-i18n="nav.bio">About</a>
         <a href="contact.html" data-i18n="nav.contact">Contacto</a>
       </nav>
 
       <div class="nav__actions">
         <div class="nav__socials">
           <a
-            href="https://www.instagram.com/USUARIO"
+            href="https://www.instagram.com/matiasmartinez.art"
             target="_blank"
             rel="noopener"
             aria-label="Instagram"
@@ -49,7 +57,7 @@
             <i class="fab fa-instagram"></i>
           </a>
           <a
-            href="https://www.facebook.com/USUARIO"
+            href="https://www.facebook.com/@martmatias"
             target="_blank"
             rel="noopener"
             aria-label="Facebook"
@@ -57,7 +65,7 @@
             <i class="fab fa-facebook-f"></i>
           </a>
           <a
-            href="https://www.youtube.com/@USUARIO"
+            href="https://www.youtube.com/@martmatias"
             target="_blank"
             rel="noopener"
             aria-label="YouTube"
@@ -65,7 +73,7 @@
             <i class="fab fa-youtube"></i>
           </a>
           <a
-            href="https://www.imdb.com/name/USUARIO/"
+            href="https://www.imdb.com/es/name/nm1031163/?ref_=nv_sr_srsg_0"
             target="_blank"
             rel="noopener"
             aria-label="IMDB"
@@ -88,12 +96,12 @@
       </div>
 
       <div class="nav__mobile" id="mobileMenu">
-        <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
-        <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+        <a href="projects.html" data-i18n="nav.projects">Portfolio</a>
+        <a href="bio.html" data-i18n="nav.bio">About</a>
         <a href="contact.html" data-i18n="nav.contact">Contacto</a>
         <div class="nav__mobile-socials">
           <a
-            href="https://www.instagram.com/USUARIO"
+            href="https://www.instagram.com/matiasmartinez.art"
             target="_blank"
             aria-label="Instagram"
             ><i class="fab fa-instagram"></i
@@ -105,13 +113,13 @@
             ><i class="fab fa-facebook-f"></i
           ></a>
           <a
-            href="https://www.youtube.com/@USUARIO"
+            href="https://www.youtube.com/@martmatias"
             target="_blank"
             aria-label="YouTube"
             ><i class="fab fa-youtube"></i
           ></a>
           <a
-            href="https://www.imdb.com/name/USUARIO/"
+            href="https://www.imdb.com/es/name/nm1031163/?ref_=nv_sr_srsg_0"
             target="_blank"
             aria-label="IMDB"
             ><i class="fab fa-imdb"></i
@@ -173,10 +181,7 @@
 
     <!-- ========== TRAILER ========== -->
     <section class="movie-trailer-section">
-      <div class="section-header">
-        <h2 class="section-title" data-i18n="movie.trailer">Trailer</h2>
-        <div class="section-line"></div>
-      </div>
+      
       <div class="movie-trailer-wrap">
         <iframe
           id="movieTrailer"
@@ -198,12 +203,6 @@
 
     <!-- ========== GALERÍA DE ESCENAS ========== -->
     <section class="movie-gallery" id="movieGallery">
-      <div class="section-header">
-        <h2 class="section-title" data-i18n="movie.scenes">
-          Fotografía de Escenas
-        </h2>
-        <div class="section-line"></div>
-      </div>
 
       <div class="movie-gallery__grid" id="movieGalleryGrid">
         <!-- Se rellena dinámicamente con JS -->

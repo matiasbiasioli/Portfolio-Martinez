@@ -25,387 +25,59 @@
 
   <body>
     <!-- ========== NAVEGACIÓN ========== -->
-    <!-- NAV OPCION I -->
-    <template>
-      <header class="nav" id="navbar">
-        <div class="nav__logo">
-          <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
-        </div>
-
-        <nav class="nav__links">
-          <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
-          <a href="bio.html" data-i18n="nav.bio">Biografía</a>
-          <a href="contact.html" data-i18n="nav.contact">Contacto</a>
-        </nav>
-
-        <div class="nav__actions">
-          <!-- Redes sociales -->
-          <div class="nav__socials">
-            <a
-              href="https://www.instagram.com/USUARIO"
-              target="_blank"
-              rel="noopener"
-              aria-label="Instagram"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/USUARIO"
-              target="_blank"
-              rel="noopener"
-              aria-label="Facebook"
-            >
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="https://www.youtube.com/@USUARIO"
-              target="_blank"
-              rel="noopener"
-              aria-label="YouTube"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a
-              href="https://www.imdb.com/name/USUARIO/"
-              target="_blank"
-              rel="noopener"
-              aria-label="IMDB"
-            >
-              <i class="fab fa-imdb"></i>
-            </a>
-          </div>
-
-          <!-- Toggle idioma -->
-          <button
-            class="lang-toggle"
-            id="langToggle"
-            aria-label="Cambiar idioma"
-          >
-            <span class="lang-toggle__option active" data-lang="es">ES</span>
-            <span class="lang-toggle__divider">/</span>
-            <span class="lang-toggle__option" data-lang="en">EN</span>
-          </button>
-
-          <!-- Hamburger mobile -->
-          <button class="nav__hamburger" id="hamburger" aria-label="Menú">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-
-        <!-- Menú mobile -->
-        <div class="nav__mobile" id="mobileMenu">
-          <a href="#projects" data-i18n="nav.projects">Proyectos</a>
-          <a href="bio.html" data-i18n="nav.bio">Biografía</a>
-          <a href="contact.html" data-i18n="nav.contact">Contacto</a>
-
-          <!-- Redes en mobile -->
-          <div class="nav__mobile-socials">
-            <a
-              href="https://www.instagram.com/USUARIO"
-              target="_blank"
-              aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/USUARIO"
-              target="_blank"
-              aria-label="Facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              href="https://www.youtube.com/@USUARIO"
-              target="_blank"
-              aria-label="YouTube"
-              ><i class="fab fa-youtube"></i
-            ></a>
-            <a
-              href="https://www.imdb.com/name/USUARIO/"
-              target="_blank"
-              aria-label="IMDB"
-              ><i class="fab fa-imdb"></i
-            ></a>
-          </div>
-        </div>
-      </header>
-    </template>
 
     <!-- NAV NUEVO OPCION II -->
-    <header class="nav nav--centered" id="navbar">
-      <!-- Links izquierda -->
-      <nav class="nav__links">
-        <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
-        <a href="bio.html" data-i18n="nav.bio">Biografía</a>
-        <a href="contact.html" data-i18n="nav.contact">Contacto</a>
-      </nav>
+    <!-- ========== NAVEGACIÓN ========== -->
+<header class="nav" id="navbar">
+  <div class="nav__logo">
+    <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
+    <p class="nav__subtitle" data-i18n="nav.subtitle">Dirección de Arte</p>
+  </div>
 
-      <!-- Logo centro -->
-      <div class="nav__logo">
-        <a href="index.html" data-i18n="nav.name">Matías Martinez</a>
-        <p class="nav__subtitle" data-i18n="nav.subtitle">Dirección de Arte</p>
-      </div>
+  <nav class="nav__links">
+    <a href="projects.html" data-i18n="nav.projects">Portfolio</a>
+    <a href="bio.html" data-i18n="nav.bio">About</a>
+    <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+  </nav>
 
-      <!-- Redes + idioma derecha -->
-      <div class="nav__right">
-        <div class="nav__socials">
-          <a
-            href="https://www.instagram.com/matiasmartinez.art/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Instagram"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a
-            href="https://www.youtube.com/@martmatias"
-            target="_blank"
-            rel="noopener"
-            aria-label="YouTube"
-          >
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a
-            href="https://www.imdb.com/es/name/nm1031163/?ref_=nv_sr_srsg_0"
-            target="_blank"
-            rel="noopener"
-            aria-label="IMDB"
-          >
-            <i class="fab fa-imdb"></i>
-          </a>
-        </div>
+  <div class="nav__actions">
+    <div class="nav__socials">
+      <a href="https://www.instagram.com/matiasmartinez.art/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/@martmatias" target="_blank" rel="noopener" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.imdb.com/es/name/nm1031163/?ref_=nv_sr_srsg_0" target="_blank" rel="noopener" aria-label="IMDB">
+        <i class="fab fa-imdb"></i>
+      </a>
+    </div>
 
-        <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
-          <span class="lang-toggle__option active" data-lang="es">ES</span>
-          <span class="lang-toggle__divider">/</span>
-          <span class="lang-toggle__option" data-lang="en">EN</span>
-        </button>
+    <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+      <span class="lang-toggle__option active" data-lang="es">ES</span>
+      <span class="lang-toggle__divider">/</span>
+      <span class="lang-toggle__option" data-lang="en">EN</span>
+    </button>
 
-        <!-- Hamburger mobile -->
-        <button class="nav__hamburger" id="hamburger" aria-label="Menú">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
 
-      <!-- Menú mobile -->
-      <div class="nav__mobile" id="mobileMenu">
-        <a href="#projects" data-i18n="nav.projects">Proyectos</a>
-        <a href="bio.html" data-i18n="nav.bio">Biografía</a>
-        <a href="contact.html" data-i18n="nav.contact">Contacto</a>
-        <div class="nav__mobile-socials">
-          <a
-            href="https://www.instagram.com/matiasmartinez.art/"
-            target="_blank"
-            aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.youtube.com/@martmatias"
-            target="_blank"
-            aria-label="YouTube"
-            ><i class="fab fa-youtube"></i
-          ></a>
-          <a
-            href="https://www.imdb.com/es/name/nm1031163/?ref_=nv_sr_srsg_0"
-            target="_blank"
-            aria-label="IMDB"
-            ><i class="fab fa-imdb"></i
-          ></a>
-        </div>
-      </div>
-    </header>
-
-    <!-- ========== COMPARACIÓN TIPOGRAFÍAS – BORRAR DESPUÉS ========== -->
-    <template>
-      <div
-        style="
-          position: fixed;
-          bottom: 2rem;
-          left: 50%;
-          transform: translateX(-50%);
-          background: rgba(10, 10, 10, 0.95);
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          padding: 2rem 3rem;
-          z-index: 200;
-          display: flex;
-          gap: 4rem;
-          align-items: flex-start;
-        "
-      >
-        <!-- Opción 1 - Source Code Pro (actual) -->
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.4rem;
-          "
-        >
-          <p
-            style="
-              font-family: &quot;Source Code Pro&quot;, monospace;
-              font-size: 1.2rem;
-              letter-spacing: 0.18em;
-              color: white;
-            "
-          >
-            Matías Martinez
-          </p>
-          <p
-            style="
-              font-family: &quot;Montserrat&quot;, sans-serif;
-              font-size: 0.55rem;
-              letter-spacing: 0.25em;
-              color: rgba(255, 255, 255, 0.4);
-            "
-          >
-            Dirección de Arte
-          </p>
-          <p
-            style="
-              font-family: &quot;Montserrat&quot;, sans-serif;
-              font-size: 0.5rem;
-              letter-spacing: 0.2em;
-              color: #c8a96e;
-              margin-top: 0.5rem;
-            "
-          >
-            Tipografía: Source Code Pro
-          </p>
-        </div>
-
-        <!-- Opción 2 - Cormorant Garamond -->
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.4rem;
-          "
-        >
-          <p
-            style="
-              font-family: &quot;Cormorant Garamond&quot;, serif;
-              font-size: 1.5rem;
-              font-weight: 300;
-              letter-spacing: 0.18em;
-              color: white;
-            "
-          >
-            Matías Martinez
-          </p>
-          <p
-            style="
-              font-family: &quot;Montserrat&quot;, sans-serif;
-              font-size: 0.55rem;
-              letter-spacing: 0.25em;
-              color: rgba(255, 255, 255, 0.4);
-            "
-          >
-            Dirección de Arte
-          </p>
-          <p
-            style="
-              font-family: &quot;Montserrat&quot;, sans-serif;
-              font-size: 0.5rem;
-              letter-spacing: 0.2em;
-              color: #c8a96e;
-              margin-top: 0.5rem;
-            "
-          >
-            Tipografía:Cormorant Garamond
-          </p>
-        </div>
-
-        <!-- Opción 3 - Montserrat -->
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.4rem;
-          "
-        >
-          <p
-            style="
-              font-family: &quot;Montserrat&quot;, sans-serif;
-              font-size: 1rem;
-              font-weight: 300;
-              letter-spacing: 0.3em;
-              color: white;
-            "
-          >
-            Matías Martinez
-          </p>
-          <p
-            style="
-              font-family: &quot;Montserrat&quot;, sans-serif;
-              font-size: 0.55rem;
-              letter-spacing: 0.25em;
-              color: rgba(255, 255, 255, 0.4);
-            "
-          >
-            Dirección de Arte
-          </p>
-          <p
-            style="
-              font-family: &quot;Montserrat&quot;, sans-serif;
-              font-size: 0.5rem;
-              letter-spacing: 0.2em;
-              color: #c8a96e;
-              margin-top: 0.5rem;
-            "
-          >
-            Tipografía: Montserrat
-          </p>
-        </div>
-        <!-- Opción 4 - Inter -->
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.4rem;
-          "
-        >
-          <p
-            style="
-              font-family: &quot;Inter&quot;, sans-serif;
-              font-size: 1rem;
-              font-weight: 300;
-              letter-spacing: 0.3em;
-              color: white;
-            "
-          >
-            Matías Martinez
-          </p>
-          <p
-            style="
-              font-family: &quot;Montserrat&quot;, sans-serif;
-              font-size: 0.55rem;
-              letter-spacing: 0.25em;
-              color: rgba(255, 255, 255, 0.4);
-            "
-          >
-            Dirección de Arte
-          </p>
-          <p
-            style="
-              font-family: &quot;Montserrat&quot;, sans-serif;
-              font-size: 0.5rem;
-              letter-spacing: 0.2em;
-              color: #c8a96e;
-              margin-top: 0.5rem;
-            "
-          >
-            Tipografía: Inter
-          </p>
-        </div>
-      </div>
-    </template>
-    <!-- ========== FIN COMPARACIÓN – BORRAR DESPUÉS ========== -->
+  <!-- Menú mobile -->
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
+    <a href="bio.html" data-i18n="nav.bio">Biografía</a>
+    <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+    <div class="nav__mobile-socials">
+      <a href="https://www.instagram.com/matiasmartinez.art/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@martmatias" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.imdb.com/es/name/nm1031163/?ref_=nv_sr_srsg_0" target="_blank" aria-label="IMDB"><i class="fab fa-imdb"></i></a>
+    </div>
+  </div>
+</header>
 
     <!-- ========== HERO – KEN BURNS ========== -->
     <section class="hero" id="hero">

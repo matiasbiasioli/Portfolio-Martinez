@@ -149,8 +149,8 @@ createObserver();
 const translations = {
   es: {
     'nav.name': 'Matías Martinez',
-    'nav.projects': 'Proyectos',
-    'nav.bio': 'Biografía',
+    'nav.projects': 'Portfolio',
+    'nav.bio': 'Sobre mí',
     'nav.contact': 'Contacto',
 
     'hero.label': 'Dirección de Arte',
@@ -205,8 +205,8 @@ const translations = {
   },
   en: {
     'nav.name': 'Matías Martinez',
-    'nav.projects': 'Projects',
-    'nav.bio': 'Biography',
+    'nav.projects': 'Portfolio',
+    'nav.bio': 'About',
     'nav.contact': 'Contact',
 
     'hero.label': 'Production Designer',
@@ -351,9 +351,8 @@ async function loadHomeProjects() {
             />
           </div>
           <div class="project-card__info">
-            <h3 class="project-card__title">${movie.titulo}</h3>
-            <p class="project-card__meta">${movie.categoria} · ${movie.año}</p>
-          </div>
+  <p class="project-card__meta">${getRol(movie)}</p>
+</div>
         </a>
       `;
 
@@ -366,6 +365,13 @@ async function loadHomeProjects() {
   } catch (error) {
     console.error('Error cargando proyectos destacados:', error);
   }
+}
+
+function getRol(movie) {
+  if (movie.disenador_produccion) return 'Diseñador de Producción';
+  if (movie.director_de_arte) return 'Director de Arte';
+  if (movie.ambientador) return 'Ambientador';
+  return '';
 }
 
 loadHomeProjects();

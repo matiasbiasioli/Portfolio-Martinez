@@ -432,6 +432,18 @@ function initTrailerAutoplay() {
   observer.observe(trailerWrap);
 }
 
+// Scroll indicator — se oculta al bajar
+const scrollIndicator = document.getElementById('scrollIndicator');
+if (scrollIndicator) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 120) {
+      scrollIndicator.classList.add('hidden');
+    } else {
+      scrollIndicator.classList.remove('hidden');
+    }
+  }, { passive: true });
+}
+
 
 /* ============================================================
    10. INICIO
